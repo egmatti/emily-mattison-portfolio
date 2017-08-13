@@ -1,3 +1,7 @@
+<!-- ==========================================
+FUNCTIONS
+========================================== -->
+
 <?php
 
 function emily_mattison_portfolio_styles() {
@@ -11,11 +15,16 @@ function emily_mattison_portfolio_js() {
 
   wp_enqueue_script('velocity_js', get_template_directory_uri() . '/js/velocity.min.js', '', '', true);
 
-  wp_enqueue_script('scrollreveal_js', 'https://unpkg.com/scrollreveal/dist/scrollreveal.min.js', '', '', true);
+  wp_enqueue_script('scrollreveal_js', get_template_directory_uri() . '/js/scrollreveal.min.js', '', '', true);
 
   wp_enqueue_script('slick_js', get_template_directory_uri() . '/js/slick.js', array('jquery'), '', true);
 
   wp_enqueue_script('script_js', get_template_directory_uri() . '/js/script.js', array('jquery', 'velocity_js'), '', true);
+
+  if( is_front_page() )
+  {
+      wp_enqueue_script('home_js', get_template_directory_uri() . '/js/home.js', array('jquery', 'fontawesome_js', 'velocity_js', 'scrollreveal_js', 'slick_js', 'script_js'), '', false);
+  }
 
   global $post;
 
@@ -23,9 +32,6 @@ function emily_mattison_portfolio_js() {
   {
     switch($post->post_name) // post_name is the post slug which is more consistent for matching to here
     {
-        case 'home':
-            wp_enqueue_script('home_js', get_template_directory_uri() . '/js/home.js', array('jquery', 'fontawesome_js', 'velocity_js', 'scrollreveal_js', 'slick_js', 'script_js'), '', false);
-            break;
         case 'about':
             wp_enqueue_script('about_js', get_template_directory_uri() . '/js/about.js', array('jquery', 'fontawesome_js', 'velocity_js', 'scrollreveal_js', 'slick_js', 'script_js'), '', true);
             break;
