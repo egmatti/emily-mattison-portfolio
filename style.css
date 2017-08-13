@@ -2308,7 +2308,7 @@ footer .main-nav__item--first {
         height: 62px; } }
 
 #home-page .hero-section {
-  background: url("../images/home/neon-text.png");
+  background: url("../emily-mattison-portfolio/images/home/neon-text.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2316,7 +2316,7 @@ footer .main-nav__item--first {
   width: 100%; }
   @media (min-width: 0px) and (max-width: 767px) {
     #home-page .hero-section {
-      background: url("../images/home/neon-text-mobile.png");
+      background: url("../emily-mattison-portfolio/images/home/neon-text-mobile.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
@@ -2656,19 +2656,19 @@ footer .main-nav__item--first {
   width: 100%; }
 
 #about-page .hero-section {
-  background: url("../images/about/graffiti.png");
+  background: url("../emily-mattison-portfolio/images/about/graffiti.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
   @media (min-width: 0px) and (max-width: 767px) {
     #about-page .hero-section {
-      background: url("../images/about/graffiti-mobile.png");
+      background: url("../emily-mattison-portfolio/images/about/graffiti-mobile.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #about-page .hero-section {
-      background: url("../images/about/graffiti-tablet.png");
+      background: url("../emily-mattison-portfolio/images/about/graffiti-tablet.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
@@ -2861,19 +2861,19 @@ footer .main-nav__item--first {
   width: 100%; }
 
 #work-page .hero-section {
-  background: url("../images/work/triangles.png");
+  background: url("../emily-mattison-portfolio/images/work/triangles.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
   @media (min-width: 0px) and (max-width: 767px) {
     #work-page .hero-section {
-      background: url("../images/work/triangles-mobile.png");
+      background: url("../emily-mattison-portfolio/images/work/triangles-mobile.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #work-page .hero-section {
-      background: url("../images/work/triangles-tablet.png");
+      background: url("../emily-mattison-portfolio/images/work/triangles-tablet.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
@@ -2940,7 +2940,7 @@ footer .main-nav__item--first {
     color: #0b0b0b; } }
 
 #ballad-page .hero-section {
-  background: url("../images/projects/ballad/ballad-wall.png");
+  background: url("../emily-mattison-portfolio/images/projects/ballad/ballad-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -2979,7 +2979,7 @@ footer .main-nav__item--first {
     top: calc(66vh * (3/4)); } }
 
 #ballad-page .project-background-image-section {
-  background: url("../images/projects/ballad/keyboard.png");
+  background: url("../emily-mattison-portfolio/images/projects/ballad/keyboard.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3002,7 +3002,7 @@ footer .main-nav__item--first {
     color: #0b0b0b; } }
 
 #bookshelf-page .hero-section {
-  background: url("../images/projects/bookshelf/bookshelf-wall.png");
+  background: url("../emily-mattison-portfolio/images/projects/bookshelf/bookshelf-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3034,7 +3034,7 @@ footer .main-nav__item--first {
     color: #0b0b0b; } }
 
 #chronicle-page .hero-section {
-  background: url("../images/projects/chronicle/chronicle-wall.png");
+  background: url("../emily-mattison-portfolio/images/projects/chronicle/chronicle-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3083,7 +3083,7 @@ footer .main-nav__item--first {
     color: #0b0b0b; } }
 
 #coffee-app-page .hero-section {
-  background: url("../images/projects/coffee-app/coffee-app-wall.png");
+  background: url("../emily-mattison-portfolio/images/projects/coffee-app/coffee-app-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3092,7 +3092,7 @@ footer .main-nav__item--first {
   border-color: #cc4d4b; }
 
 #coffee-app-page .project-background-image-section {
-  background: url("../images/projects/coffee-app/palm-trees.png");
+  background: url("../emily-mattison-portfolio/images/projects/coffee-app/palm-trees.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3115,7 +3115,7 @@ footer .main-nav__item--first {
     color: #0b0b0b; } }
 
 #dog-adoption-page .hero-section {
-  background: url("../images/projects/dog-adoption/dog-adoption-wall.png");
+  background: url("../emily-mattison-portfolio/images/projects/dog-adoption/dog-adoption-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3151,7 +3151,7 @@ footer .main-nav__item--first {
     color: #0b0b0b; } }
 
 #dogs-booklet-page .hero-section {
-  background: url("../images/projects/dogs-booklet/dogs-booklet-wall.png");
+  background: url("../emily-mattison-portfolio/images/projects/dogs-booklet/dogs-booklet-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3160,7 +3160,7 @@ footer .main-nav__item--first {
   border-color: #b31e57; }
 
 #dogs-booklet-page .project-background-image-section {
-  background: url("../images/projects/dogs-booklet/run.png");
+  background: url("../emily-mattison-portfolio/images/projects/dogs-booklet/run.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3182,7 +3182,7 @@ footer .main-nav__item--first {
     color: #0b0b0b; } }
 
 #dogtooth-cover-art-page .hero-section {
-  background: url("../images/projects/dogtooth-cover-art/dogtooth-cover-art-wall.png");
+  background: url("../emily-mattison-portfolio/images/projects/dogtooth-cover-art/dogtooth-cover-art-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3221,7 +3221,7 @@ footer .main-nav__item--first {
     color: #0b0b0b; } }
 
 #jamaica-stickers-page .hero-section {
-  background: url("../images/projects/jamaica-stickers/jamaica-stickers-wall.png");
+  background: url("../emily-mattison-portfolio/images/projects/jamaica-stickers/jamaica-stickers-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3262,7 +3262,7 @@ footer .main-nav__item--first {
     color: #0b0b0b; } }
 
 #stillwater-shirt-page .hero-section {
-  background: url("../images/projects/stillwater-shirt/stillwater-shirt-wall.png");
+  background: url("../emily-mattison-portfolio/images/projects/stillwater-shirt/stillwater-shirt-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3298,7 +3298,7 @@ footer .main-nav__item--first {
     color: #0b0b0b; } }
 
 #toptix-page .hero-section {
-  background: url("../images/projects/toptix/toptix-wall.png");
+  background: url("../emily-mattison-portfolio/images/projects/toptix/toptix-wall.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -3321,25 +3321,25 @@ footer .main-nav__item--first {
       margin-top: 50px; } }
 
 #toptix-page .project-background-image-section {
-  background: url("../images/projects/toptix/concert.png");
+  background: url("../emily-mattison-portfolio/images/projects/toptix/concert.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
 #the-latest-page .hero-section {
-  background: url("../images/the-latest/corkboard.png");
+  background: url("../emily-mattison-portfolio/images/the-latest/corkboard.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
   @media (min-width: 0px) and (max-width: 767px) {
     #the-latest-page .hero-section {
-      background: url("../images/the-latest/corkboard-mobile.png");
+      background: url("../emily-mattison-portfolio/images/the-latest/corkboard-mobile.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #the-latest-page .hero-section {
-      background: url("../images/the-latest/corkboard-tablet.png");
+      background: url("../emily-mattison-portfolio/images/the-latest/corkboard-tablet.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
@@ -3393,19 +3393,19 @@ footer .main-nav__item--first {
   top: -15px; }
 
 #blog-post-page .hero-section {
-  background: url("../images/the-latest/corkboard.png");
+  background: url("../emily-mattison-portfolio/images/the-latest/corkboard.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
   @media (min-width: 0px) and (max-width: 767px) {
     #blog-post-page .hero-section {
-      background: url("../images/the-latest/corkboard-mobile.png");
+      background: url("../emily-mattison-portfolio/images/the-latest/corkboard-mobile.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #blog-post-page .hero-section {
-      background: url("../images/the-latest/corkboard-tablet.png");
+      background: url("../emily-mattison-portfolio/images/the-latest/corkboard-tablet.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center; } }
@@ -3433,7 +3433,7 @@ footer .main-nav__item--first {
   top: -100px;
   width: 80%; }
   #blog-post-page .content-section:before {
-    content: url("../images/blog-post/shadow-left.png");
+    content: url("../emily-mattison-portfolio/images/blog-post/shadow-left.png");
     left: -8px;
     position: absolute;
     top: 100px; }
@@ -3441,7 +3441,7 @@ footer .main-nav__item--first {
       #blog-post-page .content-section:before {
         top: 50px; } }
   #blog-post-page .content-section:after {
-    content: url("../images/blog-post/shadow-right.png");
+    content: url("../emily-mattison-portfolio/images/blog-post/shadow-right.png");
     position: absolute;
     right: -8px;
     top: 100px; }

@@ -4,7 +4,7 @@ FOOTER
 
     <footer>
       <div class="footer-row-top">
-        <a href="<?php bloginfo('url'); ?>"><img class="main-nav-logo" src="images/logo-black.svg" alt="<?php bloginfo('name'); ?>"></a>
+        <a href="<?php bloginfo('url'); ?>"><img class="main-nav-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-black.svg" alt="<?php bloginfo('name'); ?>"></a>
         <ul class="footer-social-media">
           <li class="footer-social-media__item"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i><a></li>
           <li class="footer-social-media__item"><a href="https://github.com/egmatti" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>

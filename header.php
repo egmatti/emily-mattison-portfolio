@@ -37,7 +37,7 @@ HEADER
 <!-- HEADER -->
 
     <header>
-      <a href="<?php bloginfo('url'); ?>"><img class="main-nav-logo" src="images/logo-black.svg" alt="<?php bloginfo('name'); ?>"></a>
+      <a href="<?php bloginfo('url'); ?>"><img class="main-nav-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-black.svg" alt="<?php bloginfo('name'); ?>"></a>
       <ul class="main-nav">
         <li class="main-nav__item--first"><a href="about.html">About</a></li>
         <li class="main-nav__item"><a href="work.html">Work</a></li>
