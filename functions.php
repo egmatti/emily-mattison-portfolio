@@ -80,4 +80,6 @@ function emily_mattison_portfolio_js() {
 
 add_action('wp_enqueue_scripts', 'emily_mattison_portfolio_js');
 
+add_theme_support( 'post-thumbnails' );
+
 ?>

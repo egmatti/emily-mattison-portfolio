@@ -34,7 +34,9 @@ FRONT PAGE
 
             <div class="blog-slider-for__post">
               <figure class="share-figure">
-                <img src="images/the-latest/blog-posts/the-iron-yard.png" alt="Blog Post 7">
+                <?php if ( has_post_thumbnail() ) : ?>
+                    <img src="<?php the_post_thumbnail_url('full'); ?>" alt="Blog Post 7">
+                <?php endif; ?>
                 <figcaption>
                   <div class="share-container">
                     <span>Share</span>
@@ -49,7 +51,7 @@ FRONT PAGE
                 </figcaption>
               </figure>
               <article class="blog-post-container">
-                <span>June 7, 2017</span>
+                <span><?php the_time( get_option( 'date_format' ) ); ?></span>
                 <h3><?php the_title(); ?></h3>
                 <p><?php the_content(); ?></p>
               </article>
@@ -68,9 +70,11 @@ FRONT PAGE
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <div class="blog-slider-nav__post directory-nav__post">
-              <img src="images/the-latest/blog-posts/the-iron-yard.png" alt="Blog Post 7">
+              <?php if ( has_post_thumbnail() ) : ?>
+                  <img src="<?php the_post_thumbnail_url('full'); ?>" alt="Blog Post 7">
+              <?php endif; ?>
               <article>
-                <span>June 7, 2017</span>
+                <span><?php the_time( get_option( 'date_format' ) ); ?></span>
                 <h5><?php the_title(); ?></h5>
               </article>
             </div>
