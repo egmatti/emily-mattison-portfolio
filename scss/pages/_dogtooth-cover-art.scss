@@ -1,0 +1,64 @@
+// ==========================================
+// DOGTOOTH COVER ART PAGE
+// ==========================================
+
+#dogtooth-cover-art-page * {
+  ::selection {
+    background: rgba($color-project-dogtooth-cover-art-primary, 0.25);
+  }
+}
+
+// HEADER AND FOOTER
+
+#dogtooth-cover-art-page .main-nav a:hover {
+  color: $color-project-dogtooth-cover-art-secondary;
+}
+
+#dogtooth-cover-art-page .fa:hover {
+  color: $color-project-dogtooth-cover-art-secondary;
+}
+
+#dogtooth-cover-art-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#dogtooth-cover-art-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "dogtooth-cover-art/dogtooth-cover-art-wall");
+}
+
+#dogtooth-cover-art-page .headline-container h1 {
+  @include media-query(small) {
+    font-size: 1.66rem;
+  }
+}
+
+// PROJECT OVERVIEW SECTION
+
+#dogtooth-cover-art-page .project-overview-section__line--overview {
+  border-color: $color-project-dogtooth-cover-art-primary;
+}
+
+#dogtooth-cover-art-page .project-overview-section img {
+  height: 110px;
+  margin-top: $padding-div + 30px;
+
+  @include media-query(small) {
+    margin-top: $padding-div;
+  }
+
+  @include media-query(medium) {
+    margin-top: $padding-div;
+  }
+}
+
+
+// PROJECT FLEX SECTION
+
+#dogtooth-cover-art-page .project-flex-section img {
+  height: 75%;
+}

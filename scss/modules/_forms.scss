@@ -1,0 +1,112 @@
+// ==========================================
+// FORMS
+// ==========================================
+
+form {
+  margin-top: $margin-div;
+  margin-bottom: $margin-div;
+}
+
+.input-container {
+  display: inline-block;
+  margin-top: $margin-body-text + ($margin-body-text / 4);
+  margin-right: $margin-input;
+  position: relative;
+
+  & label {
+    color: $color-input-label;
+    left: ($padding-input + $border-size);
+    position: absolute;
+    top: ($padding-input + $border-size);
+  }
+
+  @include m(last) {
+    display: inline-block;
+    margin-top: $margin-body-text + ($margin-body-text / 4);
+    position: relative;
+
+    & label {
+      color: $color-input-label;
+      left: ($padding-input + $border-size);
+      position: absolute;
+      top: ($padding-input + $border-size);
+    }
+  }
+}
+
+.textarea-container {
+  display: block;
+  height: 250px;
+  margin-top: $margin-body-text + ($margin-body-text / 4);
+  position: relative;
+
+  & label {
+    color: $color-input-label;
+    left: ($padding-input + $border-size);
+    position: absolute;
+    top: ($padding-input + $border-size);
+  }
+}
+
+input {
+  border: $border-input;
+  box-sizing: border-box;
+  padding: $padding-input;
+  width: 100%;
+
+  &:valid {
+    padding: $padding-input $padding-input $padding-input ($padding-input + 3);
+  }
+
+  &:valid + label {
+    // @include opacity(0);
+    background: $color-input-label-active-background;
+    color: $color-input-label-valid;
+    padding: $padding-input-label;
+    transform: translateY(-105%);
+  }
+
+  &:focus {
+    border: $border-input-active;
+    outline: none;
+  }
+
+  &:focus + label {
+    background: $color-input-label-active-background;
+    color: $color-input-label-active;
+    padding: $padding-input-label;
+    transform: translateY(-105%);
+  }
+}
+
+textarea {
+  border: $border-input;
+  box-sizing: border-box;
+  height: 100%;
+  padding: $padding-input;
+  width: 100%;
+
+  &:valid {
+    padding: $padding-input $padding-input $padding-input ($padding-input + 3);
+  }
+
+  &:valid + label {
+    // @include opacity(0);
+    background: $color-input-label-active-background;
+    color: $color-input-label-valid;
+    padding: $padding-input-label;
+    transform: translateY(-105%);
+  }
+
+  &:focus {
+    border: $border-input-active;
+    outline: none;
+  }
+
+  &:focus + label {
+    background: $color-input-label-active-background;
+    color: $color-input-label-active;
+    padding: $padding-input-label;
+    transform: translateY(-105%);
+  }
+}

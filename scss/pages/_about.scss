@@ -1,0 +1,256 @@
+// ==========================================
+// ABOUT PAGE
+// ==========================================
+
+// HERO
+
+#about-page .hero-section {
+  @include bg-image ($image-folder: "about", $bg-image: "graffiti");
+
+  @include media-query(small) {
+    @include bg-image ($image-folder: "about", $bg-image: "graffiti-mobile");
+  }
+
+  @include media-query(medium) {
+    @include bg-image ($image-folder: "about", $bg-image: "graffiti-tablet");
+  }
+}
+
+
+// OVERVIEW SECTION
+
+#about-page .project-overview-section__line--overview {
+  border-color: $color-border-about-overview;
+}
+
+#about-page .project-overview-section h1 {
+  letter-spacing: 0rem;
+  text-transform: none;
+
+  @include media-query(small) {
+    font-size: 1.75rem;
+  }
+}
+
+#about-page .project-overview-section img {
+  height: 100px;
+}
+
+
+// MAIN IMAGE SECTION
+
+#about-page .project-main-image-section__background {
+  margin-bottom: -webkit-calc((100vh - 80px) / 8);
+  margin-bottom:  -moz-calc((100vh - 80px) / 8);
+  margin-bottom:    calc((100vh - 80px) / 8);
+
+  @include media-query(small) {
+    height: 35vh;
+    // Margin is being calculated in about.js
+  }
+
+  @include media-query(medium) {
+    margin-bottom: -webkit-calc(50vh / 8);
+    margin-bottom:  -moz-calc(50vh / 8);
+    margin-bottom:    calc(50vh / 8);
+  }
+}
+
+#about-page .project-main-image-section__image-container {
+  top: -webkit-calc((100vh - 80px) / 8);
+  top:  -moz-calc((100vh - 80px) / 8);
+  top:    calc((100vh - 80px) / 8);
+
+  @include media-query(small) {
+    top: -webkit-calc(50vh * (1/4));
+    top:  -moz-calc(50vh * (1/4));
+    top:    calc(50vh * (1/4));
+  }
+
+  @include media-query(medium) {
+    top: -webkit-calc(50vh / 8);
+    top:  -moz-calc(50vh / 8);
+    top:    calc(50vh / 8);
+  }
+}
+
+
+// MAIN BODY SECTION
+
+#about-page .main-body-section {
+  height: auto;
+  width: 100%;
+}
+
+#about-page .main-body-section .left-column {
+  @include media-query(small) {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+  }
+}
+
+#about-page .main-body-section__description {
+  margin-left: $margin-section-horizontal;
+  width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    margin: 0 $margin-page-tablet-horizontal;
+    width: $width-page-tablet;
+  }
+}
+
+#about-page .main-body-section .right-column {
+  @include media-query(small) {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+  }
+}
+
+#about-page .main-body-section .button-div {
+  height: 100%;
+}
+
+#about-page .main-body-section .button-container {
+  @include flexbox();
+  height: 100%;
+  margin: -75px 0;
+  padding-bottom: 75px;
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+    padding: $padding-div 0 0 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+    padding: $padding-div 0 0 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+
+// CONTACT SECTION
+
+#about-page .contact-section {
+  background: $color-body-accent;
+  clear: both;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+#about-page .contact-section .left-column {
+  @include media-query(small) {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+}
+
+#about-page .contact-section .right-column {
+  @include media-query(small) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
+}
+
+#about-page .contact-form {
+  margin-left: $margin-section-horizontal;
+  width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    margin: 0 $margin-page-tablet-horizontal;
+    padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
+    width: $width-page-tablet;
+  }
+}
+
+#about-page .input-container {
+  margin-right: 4.5%;
+  width: 30%;
+
+  @include media-query(small) {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    margin-right: 4.25%;
+    width: 30%;
+  }
+}
+
+#about-page .input-container--last {
+  width: 30%;
+
+  @include media-query(small) {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+#about-page .contact-section .button-div {
+  height: 100%;
+
+  @include media-query(small) {
+    padding-bottom: $padding-div;
+  }
+
+  @include media-query(medium) {
+    padding-bottom: $padding-div;
+  }
+}
+
+#about-page .contact-section .button-container {
+  @include flexbox();
+  height: 100%;
+  width: 100%;
+}

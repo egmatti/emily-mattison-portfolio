@@ -1,0 +1,56 @@
+// ==========================================
+// BOOKSHELF PAGE
+// ==========================================
+
+#bookshelf-page * {
+  ::selection {
+    background: rgba($color-project-bookshelf-primary, 0.25);
+  }
+}
+
+// HEADER AND FOOTER
+
+#bookshelf-page .main-nav a:hover {
+  color: $color-project-bookshelf-secondary;
+}
+
+#bookshelf-page .fa:hover {
+  color: $color-project-bookshelf-secondary;
+}
+
+#bookshelf-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#bookshelf-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "bookshelf/bookshelf-wall");
+}
+
+
+// PROJECT OVERVIEW SECTION
+
+#bookshelf-page .project-overview-section__line--overview {
+  border-color: $color-project-bookshelf-primary;
+}
+
+#bookshelf-page .button {
+  border: $border-button-bookshelf;
+
+  span {
+    color: $color-project-bookshelf-secondary;
+  }
+
+  &:hover {
+    background: $color-project-bookshelf-secondary;
+    border: $border-button-bookshelf-hover;
+
+    span {
+      color: $color-body;
+    }
+  }
+}

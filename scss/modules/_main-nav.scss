@@ -1,0 +1,123 @@
+// ==========================================
+// MAIN NAV
+// ==========================================
+
+.main-nav-logo {
+  @include vertical-align;
+  height: 45px;
+  width: auto;
+}
+
+.main-nav {
+  @include vertical-align;
+
+  @include e(item) {
+    display: inline-block;
+    list-style-type: none;
+    padding: $padding-nav-item;
+
+    @include m(first) {
+      @extend .main-nav__item;
+    }
+
+    @include m(last) {
+      @extend .main-nav__item;
+    }
+  }
+
+  @include media-query(small) {
+    display: none;
+  }
+}
+
+.main-nav a {
+  @extend h1;
+  color: $color-nav;
+  font-size: 1.25rem;
+  letter-spacing: $letter-spacing-headline;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-nav-hover;
+  }
+
+  span {
+    font-family: $font-stack-accent;
+    font-size: 0.78125rem;
+    font-weight: $font-weight-regular;
+    letter-spacing: 0rem;
+    text-transform: lowercase;
+    vertical-align: top;
+
+    &:hover {
+      color: $color-nav-hover;
+    }
+  }
+}
+
+.main-nav-mobile-icon {
+  display: none;
+
+  @include media-query(small) {
+    @include vertical-align();
+    color: $color-nav;
+    display: inline-block;
+
+    &:hover {
+      color: $color-nav;
+    }
+  }
+}
+
+.box-shadow-cover {
+  background: $color-header;
+  display: none;
+  height: 10px;
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  z-index: 10;
+}
+
+.main-nav-mobile-dropdown {
+  @include box-shadow ($b: 7px);
+  background: $color-header;
+  display: none;
+  height: 120px;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+.main-nav-mobile {
+  @include flexbox($direction: column);
+  height: 100%;
+  width: 100%;
+}
+
+.main-nav-mobile li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.main-nav-mobile__item--last {
+  padding-right: 13px;
+  padding-bottom: 0;
+}
+
+.main-nav-mobile a {
+  @extend h1;
+  color: $color-nav;
+  font-size: 1.25rem;
+  letter-spacing: $letter-spacing-headline;
+  text-decoration: none;
+
+  span {
+    font-family: $font-stack-accent;
+    font-size: 0.78125rem;
+    font-weight: $font-weight-regular;
+    letter-spacing: 0rem;
+    text-transform: lowercase;
+    vertical-align: top;
+  }
+}

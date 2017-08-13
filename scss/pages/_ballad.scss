@@ -1,0 +1,104 @@
+// ==========================================
+// BALLAD PAGE
+// ==========================================
+
+#ballad-page * {
+  ::selection {
+    background: rgba($color-project-ballad-primary, 0.25);
+  }
+}
+
+// HEADER AND FOOTER
+
+#ballad-page .main-nav a:hover {
+  color: $color-project-ballad-secondary;
+}
+
+#ballad-page .fa:hover {
+  color: $color-project-ballad-secondary;
+}
+
+#ballad-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#ballad-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "ballad/ballad-wall");
+}
+
+
+// PROJECT OVERVIEW SECTION
+
+#ballad-page .project-overview-section__line--overview {
+  border-color: $color-project-ballad-primary;
+}
+
+#ballad-page .button {
+  border: $border-button-ballad;
+
+  span {
+    color: $color-project-ballad-secondary;
+  }
+
+  &:hover {
+    background: $color-project-ballad-secondary;
+    border: $border-button-ballad-hover;
+
+    span {
+      color: $color-body;
+    }
+  }
+}
+
+// PROJECT MAIN IMAGE SECTION
+
+#ballad-page .project-main-image-section__background {
+  @include media-query(small) {
+    height: 66vh;
+    // Margin is being calculated in ballad.js
+  }
+}
+
+#ballad-page .project-main-image-section__description-container {
+  @include media-query(small) {
+    height: -webkit-calc(66vh * (3/4));
+    height:  -moz-calc(66vh * (3/4));
+    height:    calc(66vh * (3/4));
+  }
+}
+
+#ballad-page .project-main-image-section__description {
+  @include media-query(medium) {
+    padding: 0 25px;
+  }
+}
+
+
+#ballad-page .project-main-image-section__image-container {
+  @include media-query(small) {
+    top: -webkit-calc(66vh * (3/4));
+    top:  -moz-calc(66vh * (3/4));
+    top:    calc(66vh * (3/4));
+  }
+}
+
+
+// PROJECT BACKGROUND IMAGE SECTION
+
+#ballad-page .project-background-image-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "ballad/keyboard");
+}
+
+
+// PROJECT FLOAT SECTION
+
+#ballad-page .project-float-section__div--left, #ballad-page .project-float-section__div--right {
+  @include media-query(medium) {
+    margin: $margin-body-text 5% 0 5%;
+  }
+}

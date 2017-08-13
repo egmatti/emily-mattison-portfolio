@@ -1,0 +1,55 @@
+// ==========================================
+// COFFEE APP PAGE
+// ==========================================
+
+#coffee-app-page * {
+  ::selection {
+    background: rgba($color-project-coffee-app-primary, 0.25);
+  }
+}
+
+// HEADER AND FOOTER
+
+#coffee-app-page .main-nav a:hover {
+  color: $color-project-coffee-app-secondary;
+}
+
+#coffee-app-page .fa:hover {
+  color: $color-project-coffee-app-secondary;
+}
+
+#coffee-app-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#coffee-app-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "coffee-app/coffee-app-wall");
+}
+
+
+// PROJECT OVERVIEW SECTION
+
+#coffee-app-page .project-overview-section__line--overview {
+  border-color: $color-project-coffee-app-primary;
+}
+
+
+// PROJECT BACKGROUND IMAGE SECTION
+
+#coffee-app-page .project-background-image-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "coffee-app/palm-trees");
+}
+
+
+// PROJECT WIREFRAMES SECTION
+
+#coffee-app-page .project-wireframes-section__image {
+  @include media-query(small) {
+    width: 75%;
+  }
+}

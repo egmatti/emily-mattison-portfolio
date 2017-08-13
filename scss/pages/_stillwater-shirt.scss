@@ -1,0 +1,58 @@
+// ==========================================
+// STILLWATER SHIRT PAGE
+// ==========================================
+
+#stillwater-shirt-page * {
+  ::selection {
+    background: rgba($color-project-stillwater-shirt-primary, 0.25);
+  }
+}
+
+// HEADER AND FOOTER
+
+#stillwater-shirt-page .main-nav a:hover {
+  color: $color-project-stillwater-shirt-secondary;
+}
+
+#stillwater-shirt-page .fa:hover {
+  color: $color-project-stillwater-shirt-secondary;
+}
+
+#stillwater-shirt-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#stillwater-shirt-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "stillwater-shirt/stillwater-shirt-wall");
+}
+
+#stillwater-shirt-page .headline-container h1 {
+  @include media-query(small) {
+    font-size: 1.66rem;
+  }
+}
+
+
+// PROJECT OVERVIEW SECTION
+
+#stillwater-shirt-page .project-overview-section__line--overview {
+  border-color: $color-project-stillwater-shirt-primary;
+}
+
+#stillwater-shirt-page .project-overview-section img {
+  height: 75px;
+  margin-top: $padding-div + 30px;
+
+  @include media-query(small) {
+    margin-top: $padding-div;
+  }
+
+  @include media-query(medium) {
+    margin-top: $padding-div;
+  }
+}

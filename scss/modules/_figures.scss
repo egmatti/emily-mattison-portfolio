@@ -1,0 +1,236 @@
+// ==========================================
+// FIGURES
+// ==========================================
+
+.share-figure {
+  @include box-shadow;
+  background: $color-figure;
+  border: 15px solid $color-figure;
+  margin: 0;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  figcaption {
+    background: $color-figure;
+    width: 100%;
+
+    div {
+      width: 100%;
+
+      span {
+        color: $color-icon;
+        font-family: $font-stack-accent;
+        position: relative;
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+.directory__figure {
+  @include box-shadow;
+  background: $color-figure;
+  border: 15px solid $color-figure;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  margin: 0;
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    background: $color-figure;
+    width: 100%;
+
+    div {
+      @include flexbox($direction: column);
+      width: 100%;
+
+      span {
+        color: $color-date;
+        font-weight: $font-weight-medium;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+      }
+
+      h2, h3, h4 {
+
+      }
+    }
+  }
+
+  @include m(first-row) {
+    @extend .directory__figure;
+    margin-left: $margin-div;
+    position: relative;
+    top: $height-content-offset;
+    width: -webkit-calc(100% - #{$width-directory-nav-container} - #{$margin-div});
+    width:    -moz-calc(100% - #{$width-directory-nav-container} - #{$margin-div});
+    width:         calc(100% - #{$width-directory-nav-container} - #{$margin-div});
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include media-query(small) {
+      margin: 0 0 ($padding-div / 2) 0;
+      top: ($height-content-offset / 2);
+      width: 100%;
+    }
+
+    @include media-query(medium) {
+      width: -webkit-calc(100% - #{$width-directory-nav-container-tablet} - #{$margin-div});
+      width:    -moz-calc(100% - #{$width-directory-nav-container-tablet} - #{$margin-div});
+      width:         calc(100% - #{$width-directory-nav-container-tablet} - #{$margin-div});
+    }
+
+    img {
+      object-fit: contain;
+    }
+
+    figcaption {
+      padding: 15px 0px 7.5px 0px;
+
+      span {
+        font-size: (1.75rem / 1.85);
+
+        @include media-query(small) {
+          font-size: ((1.75rem / 1.85) / 1.75); // The desktop size divided by 1.75
+        }
+
+        @include media-query(medium) {
+          font-size: ((1.75rem / 1.85) / 1.4); // The desktop size divided by 1.4
+        }
+      }
+
+      h2 {
+        padding-top: (1.75rem / 1.70666); // The same ratio as the h1 padding in the hero
+
+        @include media-query(small) {
+          font-size: (1.75rem / 1.75); // The desktop h2 divided by 1.75
+          padding-top: ((1.75rem / 1.70666) / 1.75); // The desktop padding divided by 1.75
+        }
+
+        @include media-query(medium) {
+          font-size: (1.75rem / 1.4); // The desktop h2 divided by 1.4
+          padding-top: ((1.75rem / 1.70666) / 1.4); // The desktop padding divided by 1.4
+        }
+      }
+    }
+  }
+
+  @include m(second-row) {
+    @extend .directory__figure;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include media-query(small) {
+      margin: ($padding-div / 2) 0;
+      width: 100%;
+    }
+
+    .directory__image-container {
+      // Height is being calculated in script.js
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    figcaption {
+      padding-top: 15px;
+
+      span {
+        font-size: (1.5rem / 1.85); // The same ratio as the span in the hero
+
+        @include media-query(small) {
+          font-size: ((1.75rem / 1.85) / 1.75); // The h2 desktop size divided by 1.75
+        }
+
+        @include media-query(medium) {
+          font-size: ((1.5rem / 1.85) / 1.4); // The h3 desktop size divided by 1.4
+        }
+      }
+
+      h3 {
+        font-weight: $font-weight-bold;
+        padding-top: (1.5rem / 1.70666); // The same ratio as the h1 padding in the hero
+
+        @include media-query(small) {
+          font-size: (1.75rem / 1.75); // The desktop h2 divided by 1.75
+          padding-top: ((1.75rem / 1.70666) / 1.75); // The desktop padding divided by 1.75
+        }
+
+        @include media-query(medium) {
+          font-size: (1.5rem / 1.4); // The desktop h3 divided by 1.4
+          padding-top: ((1.5rem / 1.70666) / 1.4); // The desktop padding divided by 1.4
+        }
+      }
+    }
+  }
+
+  @include m(other-row) {
+    @extend .directory__figure;
+    width: auto;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include media-query(small) {
+      margin: ($padding-div / 2) 0;
+      width: 100%;
+    }
+
+    .directory__image-container {
+      // Height is being calculated in script.js
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    figcaption {
+      padding-top: 15px;
+
+      span {
+        font-size: (1.25rem / 1.85);
+
+        @include media-query(small) {
+          font-size: ((1.75rem / 1.85) / 1.75); // The h2 desktop size divided by 1.75
+        }
+
+        @include media-query(medium) {
+          font-size: ((1.25rem / 1.85) / 1.8); // The h4 desktop size divided by 1.8
+        }
+      }
+
+      h4 {
+        font-weight: $font-weight-bold;
+        padding-top: (1.25rem / 1.70666); // The same ratio as the h1 padding in the hero
+
+        @include media-query(small) {
+          font-size: (1.75rem / 1.75); // The desktop h2 divided by 1.75
+          padding-top: ((1.75rem / 1.70666) / 1.75); // The desktop padding divided by 1.75
+        }
+
+        @include media-query(medium) {
+          font-size: (1.25rem / 1.8); // The desktop h4 divided by 1.8
+          padding-top: ((1.25rem / 1.70666) / 1.8); // The desktop padding divided by 1.8
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// ==========================================
+// COLUMN
+// ==========================================
+
+.left-column {
+  display: inline-block;
+  position: relative;
+  width: 75%;
+}
+
+.right-column {
+  display: inline-block;
+  left: 75%;
+  position: absolute;
+  width: 25%;
+}
+
+.left-description {
+  float: left;
+}
+
+.right-description {
+  float: right;
+}

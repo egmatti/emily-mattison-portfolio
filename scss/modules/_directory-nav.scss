@@ -1,0 +1,97 @@
+// ==========================================
+// DIRECTORY NAV
+// ==========================================
+
+.directory-nav-container {
+  height: 575px;
+  width: $width-directory-nav-container;
+
+  @include media-query(medium) {
+    width: $width-directory-nav-container-tablet;
+  }
+
+  h4 {
+    position: relative;
+    text-align: center;
+    top: 0;
+
+    @include media-query(medium) {
+      font-size: (1.25rem / 1.4);
+    }
+  }
+}
+
+.directory-nav-border {
+  border-right: $border-directory-nav;
+  float: left;
+  height: 40px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 5px;
+  width: 50%;
+}
+
+.directory-nav {
+  border: $border-directory-nav;
+  bottom: 0;
+  height: 500px;
+  overflow-y: scroll;
+  position: relative;
+  width: 100%;
+
+  @include e(post) {
+    background: $color-blog-post;
+    border-bottom: $border-directory-nav;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 100px;
+    position: relative;
+    width: 100%;
+
+    &:hover {
+      background: $color-blog-post-hover;
+    }
+
+    @include media-query(medium) {
+      height: 50px;
+    }
+
+    img {
+      @include vertical-align;
+      display: inline-block;
+      max-height: 75%;
+      float: left;
+      object-fit: contain;
+      padding-left: 5%;
+      width: 30%;
+    }
+
+    article {
+      @include vertical-align();
+      display: inline-block;
+      float: left;
+      padding-left: 10%;
+      top: 47%;
+      width: 55%;
+
+      span {
+        @extend %date;
+        font-size: (0.85 * 0.85rem);
+
+        @include media-query(medium) {
+          font-size: ((0.85 * 0.85rem) / 1.4);
+        }
+      }
+
+      h5 {
+        color: $color-blog-post-title;
+        font-size: (0.85 * 1rem);
+        padding-top: 2.5px;
+
+        @include media-query(medium) {
+          font-size: ((0.85 * 1rem) / 1.4);
+        }
+      }
+    }
+  }
+}

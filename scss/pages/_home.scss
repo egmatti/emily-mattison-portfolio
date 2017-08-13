@@ -1,0 +1,450 @@
+// ==========================================
+// HOME PAGE
+// ==========================================
+
+// HERO
+
+#home-page .hero-section {
+  @include bg-image ($image-folder: "home", $bg-image: "neon-text");
+  // background: $color-hero-background;
+  height: 100vh;
+  width: 100%;
+
+  @include media-query(small) {
+    @include bg-image ($image-folder: "home", $bg-image: "neon-text-mobile");
+  }
+}
+
+
+// ABOUT SECTION
+
+#home-page .about-section {
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  position: relative;
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+  }
+}
+
+#home-page .about-section div {
+  @include flexbox ($direction: column);
+  padding: 100px 25%;
+
+  @include media-query(small) {
+    padding: $padding-div $margin-page-mobile-horizontal;
+  }
+
+  @include media-query(medium) {
+    padding: 100px $margin-page-tablet-horizontal;
+  }
+}
+
+#home-page .about-section h1 {
+  @include media-query(small) {
+    font-size: 1.75rem;
+  }
+}
+
+#home-page .about-section img {
+  height: 150px;
+  object-fit: contain;
+  margin-top: $margin-body-text;
+}
+
+
+// BLOG SECTION
+
+#home-page .blog-section {
+  background: $color-blog-section;
+  border-bottom: $border-section;
+  border-top: $border-section;
+  clear: both;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+#home-page #blog-div {
+  float: left;
+
+  @include media-query(small) {
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    width: 66%;
+  }
+}
+
+#home-page #blog-column {
+  background: $color-blog-column;
+  overflow-y: scroll;
+
+  @include media-query(small) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    left: 66%;
+    width: 33%;
+  }
+}
+
+#home-page .blog-slider-for {
+  background: $color-blog-div;
+  float: right;
+  width: 87.5%;
+
+  @include media-query(small) {
+    float: none;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    width: 100%;
+  }
+
+  div {
+    overflow: visible;
+  }
+
+  @include e(post) {
+    overflow: hidden;
+    padding-bottom: $padding-div;
+    padding-top: $padding-div;
+    width: 100%;
+
+    figure {
+      float: left;
+      position: relative;
+      right: 5%;
+      width: 30%;
+
+      @include media-query(small) {
+        display: none;
+      }
+
+      @include media-query(medium) {
+        display: none;
+      }
+
+      figcaption {
+        height: 160px;
+
+        div {
+          @include flexbox($direction: row, $justify: space-around);
+
+          span {
+            font-size: 2.25rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+#home-page .share-container {
+  height: 40%;
+  padding-top: 5%;
+}
+
+#home-page .blog-social-media-container {
+  height: 50%;
+  padding-bottom: 5%;
+}
+
+#home-page .blog-social-media {
+
+  @include e(item) {
+    display: inline-block;
+    list-style-type: none;
+  }
+}
+
+#home-page .blog-section .fa {
+  padding: $padding-blog-social-media-item;
+}
+
+#home-page .blog-section .fa-facebook, .fa-pinterest-p {
+  border-right: $border-divider;
+}
+
+#home-page .blog-section .fa-twitter {
+  border: none;
+}
+
+#home-page .slick-slide {
+  height: 0;
+}
+
+#home-page .slick-current, .slick-active {
+  height: auto;
+  outline: none;
+}
+
+#home-page .blog-post-container {
+  display: inline-block;
+  float: right;
+  padding-right: 5%;
+  width: 60%;
+
+  @include media-query(small) {
+    float: none;
+    margin: $margin-page-mobile-horizontal;
+    padding-right: none;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    float: none;
+    margin: $margin-page-tablet-horizontal;
+    padding-right: none;
+    width: $width-page-tablet;
+  }
+
+  span {
+    @extend %date;
+    margin-top: $margin-body-text;
+  }
+
+  h3 {
+    padding-top: 18.75px;
+  }
+}
+
+#home-page .directory-nav {
+  border: none;
+  overflow-y: scroll;
+  position: static;
+
+  @include e(post) {
+    border-bottom: $border-directory-nav;
+    box-sizing: content-box;
+    display: block;
+    height: 100px;
+    position: static;
+
+    article {
+      padding-left: 5%;
+      width: 60%;
+
+      span {
+        font-size: 0.85rem;
+      }
+
+      h5 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+#home-page .blog-slider-nav .slick-current {
+  background: $color-blog-post-active;
+
+  h5 {
+    color: $color-blog-post-title-active;
+  }
+}
+
+
+// INSTAGRAM SECTION
+
+#home-page .instagram-section {
+  clear: both;
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  width: 100%;
+
+  @include media-query(small) {
+    height: auto;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+  }
+}
+
+#home-page .instagram-slider-for--desktop {
+  display: block;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  @include media-query(medium) {
+    display: none;
+  }
+}
+
+#home-page .instagram-slider-for--tablet {
+  display: none;
+
+  @include media-query(medium) {
+    display: block;
+  }
+}
+
+#home-page .instagram-slider-for--mobile {
+  display: none;
+
+  @include media-query(small) {
+    display: block;
+  }
+}
+
+#home-page .instagram-section .slick-prev:before, .slick-next:before {
+    color: $color-arrows-instagram;
+  }
+
+#home-page .instagram-div {
+  height: auto;
+  padding: $margin-section;
+  padding-bottom: 75px;
+
+  @include media-query(small) {
+    padding: $padding-div 10%;
+    width: 80%;
+  }
+}
+
+#home-page .instagram-slider-for__post {
+  @include flexbox($align: baseline);
+}
+
+#home-page .instagram-slider-for__post img {
+  height: 275px;
+  object-fit: contain;
+}
+
+#home-page .instagram-section .button-container {
+  @include flexbox();
+  margin-bottom: $margin-section-vertical;
+
+  @include media-query(small) {
+    display: none;
+  }
+}
+
+#home-page .instagram-section .button-container--mobile {
+  display: none;
+
+  @include media-query(small) {
+    @include flexbox();
+    margin-bottom: $padding-div;
+  }
+}
+
+
+// CONTACT SECTION
+
+#home-page .contact-section {
+  background: $color-body-accent;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+#home-page .contact-section .left-column {
+  @include media-query(small) {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+}
+
+#home-page .contact-section .right-column {
+  @include media-query(small) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
+}
+
+#home-page .contact-form {
+  margin-left: $margin-section-horizontal;
+  width: $width-page;
+
+  @include media-query(small) {
+    margin: 0 $margin-page-mobile-horizontal;
+    padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    margin: 0 $margin-page-tablet-horizontal;
+    padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
+    width: $width-page-tablet;
+  }
+}
+
+#home-page .input-container {
+  margin-right: 4.5%;
+  width: 30%;
+
+  @include media-query(small) {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    margin-right: 4.25%;
+    width: 30%;
+  }
+}
+
+#home-page .input-container--last {
+  width: 30%;
+
+  @include media-query(small) {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+#home-page .contact-section .button-div {
+  height: 100%;
+
+  @include media-query(small) {
+    padding-bottom: $padding-div;
+  }
+
+  @include media-query(medium) {
+    padding-bottom: $padding-div;
+  }
+}
+
+#home-page .contact-section .button-container {
+  @include flexbox();
+  height: 100%;
+  width: 100%;
+}

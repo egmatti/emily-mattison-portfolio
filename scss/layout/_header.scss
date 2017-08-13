@@ -1,0 +1,32 @@
+// ==========================================
+// HEADER
+// ==========================================
+
+header {
+  @include box-shadow($b: 7px);
+  background: $color-header;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+header .main-nav-logo {
+  float: left;
+  margin-left: $margin-nav;
+}
+
+header .main-nav {
+  float: right;
+  margin-right: $margin-nav;
+}
+
+header .main-nav__item--last {
+  padding-left: 13px;
+  padding-right: 0;
+}
+
+header .main-nav-mobile-icon {
+  float: right;
+  margin-right: $margin-nav;
+}

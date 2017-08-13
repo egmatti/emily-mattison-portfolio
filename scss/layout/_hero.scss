@@ -1,0 +1,51 @@
+// ==========================================
+// HERO
+// ==========================================
+
+.hero-section {
+  background: $color-hero-background;
+  height: 75vh;
+  width: 100%;
+
+  @include media-query(small) {
+    height: 50vh;
+  }
+
+  @include media-query(medium) {
+    height: 50vh;
+  }
+}
+
+.headline-container {
+  @include flexbox($direction: column);
+  height: -webkit-calc(100% - 80px);
+  height:   -moz-calc(100% - 80px);
+  height:     calc(100% - 80px);
+  position: relative;
+  top: 80px; // Height of header
+  width: 100%;
+}
+
+.headline-container h1 {
+  @include text-shadow();
+  color: $color-page-title;
+  font-size: $font-size-page-title;
+  margin-top: 0;
+  padding-top: $padding-page-title;
+
+  @include media-query(small) {
+    font-size: $font-size-page-title-mobile;
+    padding-top: $padding-page-title-mobile;
+  }
+}
+
+.headline-container span {
+  @extend %date;
+  @include text-shadow();
+  color: $color-blog-page-date;
+  font-size: $font-size-blog-page-date;
+
+  @include media-query(small) {
+    font-size: $font-size-blog-page-date-mobile;
+  }
+}

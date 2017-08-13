@@ -1,0 +1,65 @@
+// ==========================================
+// TOPTIX PAGE
+// ==========================================
+
+#toptix-page * {
+  ::selection {
+    background: rgba($color-project-toptix-primary, 0.25);
+  }
+}
+
+// HEADER AND FOOTER
+
+#toptix-page .main-nav a:hover {
+  color: $color-project-toptix-secondary;
+}
+
+#toptix-page .fa:hover {
+  color: $color-project-toptix-secondary;
+}
+
+#toptix-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#toptix-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "toptix/toptix-wall");
+}
+
+#toptix-page .headline-container h1 {
+  @include media-query(small) {
+    font-size: 1.66rem;
+  }
+}
+
+
+// PROJECT OVERVIEW SECTION
+
+#toptix-page .project-overview-section__line--overview {
+  border-color: $color-project-toptix-primary;
+}
+
+#toptix-page .project-overview-section img {
+  height: 100px;
+  margin-top: $padding-div + 30px;
+
+  @include media-query(small) {
+    margin-top: $padding-div;
+  }
+
+  @include media-query(medium) {
+    margin-top: $padding-div;
+  }
+}
+
+
+// PROJECT BACKGROUND IMAGE SECTION
+
+#toptix-page .project-background-image-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "toptix/concert");
+}

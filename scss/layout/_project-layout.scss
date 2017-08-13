@@ -1,0 +1,69 @@
+// ==========================================
+// PROJECT LAYOUT
+// ==========================================
+
+.project-layout-section {
+  background: $color-body;
+  clear: both;
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  margin: 0 $margin-page-horizontal;
+  position: relative;
+  width: $width-page;
+
+  @include media-query(small) {
+    height: 50vh;
+  }
+
+  @include media-query(medium) {
+    height: 50vh;
+  }
+
+  @include e(iframe) {
+    height: 650px;
+    padding: 0 $margin-section-horizontal;
+    position: absolute;
+    top: 0;
+    width: 80%;
+
+    @include media-query(small) {
+      height: 95%;
+      margin-bottom: -325px;
+      max-width: 80%;
+      width: auto;
+    }
+
+    @include media-query(medium) {
+      height: 510px;
+      margin-bottom: -325px;
+    }
+  }
+}
+
+.project-layout-section__cover {
+  background: $color-body;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+
+  @include m(top) {
+    @extend .project-layout-section__cover;
+    height: 53px;
+    top: 0;
+
+    @include media-query(small) {
+      height: 25px;
+    }
+  }
+
+  @include m(bottom) {
+    @extend .project-layout-section__cover;
+    height: 90px;
+    bottom: 0;
+
+    @include media-query(small) {
+      height: 62px;
+    }
+  }
+}

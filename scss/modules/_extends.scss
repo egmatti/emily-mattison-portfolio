@@ -1,0 +1,28 @@
+// ==========================================
+// EXTENDS
+// ==========================================
+
+%date {
+  color: $color-date;
+  font-size: 0.85rem;
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.gray-headline {
+  color: $color-headline-gray;
+}
+
+.large-body-text {
+  font-size: 1.125rem;
+  line-height: (1.125 * 2rem);
+}
+
+.no-headline {
+  margin-top: 0;
+}

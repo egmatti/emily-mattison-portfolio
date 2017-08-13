@@ -1,0 +1,105 @@
+// ==========================================
+// PROJECT FLOAT
+// ==========================================
+
+.project-float-section {
+  // background: $gray;
+  clear: both;
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  margin: 0 $margin-page-horizontal;
+  width: $width-page;
+
+  @include media-query(small) {
+    height: auto;
+  }
+
+  @include media-query(medium) {
+    height: auto;
+  }
+
+  @include e(image-container) {
+    @include flexbox();
+    height: 100%;
+    width: 50%;
+
+    @include media-query(small) {
+      height: auto;
+      margin: 0 $margin-page-mobile-horizontal;
+      width: $width-page-mobile;
+    }
+
+    @include media-query(medium) {
+      height: auto;
+      margin: 0 15%;
+      width: 70%;
+    }
+
+    @include m(left) {
+      @extend .project-float-section__image-container;
+      float: left;
+
+      @include media-query(small) {
+        float: none;
+      }
+
+      @include media-query(medium) {
+        float: none;
+      }
+    }
+
+    @include m(right) {
+      @extend .project-float-section__image-container;
+      float: right;
+
+      @include media-query(small) {
+        float: none;
+      }
+
+      @include media-query(medium) {
+        float: none;
+      }
+    }
+  }
+
+  @include e(image) {
+    max-height: 90%;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  @include e(div) {
+    @include flexbox($direction: column, $align: flex-start);
+    height: 100%;
+    margin: 0 5%;
+    text-align: justify;
+    width: 40%;
+
+    @include media-query(small) {
+      clear: both;
+      display: block;
+      margin: 0 5%;
+      text-align: center;
+      width: 90%; // Since this is 90% of 90% it roughly equals the $width-page-mobile
+    }
+
+    @include media-query(medium) {
+      display: block;
+      clear: both;
+      margin: 0 5%;
+      text-align: center;
+      width: 90%;
+    }
+
+    @include m(left) {
+      @extend .project-float-section__div;
+      float: left;
+    }
+
+    @include m(right) {
+      @extend .project-float-section__div;
+      float: right;
+    }
+  }
+}

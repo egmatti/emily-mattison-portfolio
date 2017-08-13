@@ -1,0 +1,82 @@
+// ==========================================
+// CHRONICLE PAGE
+// ==========================================
+
+#chronicle-page * {
+  ::selection {
+    background: rgba($color-project-chronicle-primary, 0.25);
+  }
+}
+
+// HEADER AND FOOTER
+
+#chronicle-page .main-nav a:hover {
+  color: $color-project-chronicle-secondary;
+}
+
+#chronicle-page .fa:hover {
+  color: $color-project-chronicle-secondary;
+}
+
+#chronicle-page .main-nav-mobile-icon:hover {
+  @include media-query(small) {
+    color: $color-nav;
+  }
+}
+
+
+// HERO
+
+#chronicle-page .hero-section {
+  @include bg-image ($image-folder: "projects", $bg-image: "chronicle/chronicle-wall");
+}
+
+#chronicle-page .headline-container h1 {
+  @include media-query(small) {
+    font-size: 1.66rem;
+  }
+}
+
+
+// PROJECT OVERVIEW SECTION
+
+#chronicle-page .project-overview-section__line--overview {
+  border-color: $color-project-chronicle-primary;
+}
+
+#chronicle-page .project-overview-section img {
+  height: 100px;
+}
+
+
+// PROJECT MAIN IMAGE SECTION
+
+#chronicle-page .project-main-image-section__background {
+  @include media-query(small) {
+    height: 66vh;
+    // Margin is being calculated in ballad.js
+  }
+}
+
+#chronicle-page .project-main-image-section__description-container {
+  @include media-query(small) {
+    height: -webkit-calc(66vh * (3/4));
+    height:  -moz-calc(66vh * (3/4));
+    height:    calc(66vh * (3/4));
+  }
+}
+
+#chronicle-page .project-main-image-section__description {
+  @include media-query(medium) {
+    padding: 0 25px;
+  }
+}
+
+
+#chronicle-page .project-main-image-section__image-container {
+  @include media-query(small) {
+    top: -webkit-calc(66vh * (3/4));
+    top:  -moz-calc(66vh * (3/4));
+    top:    calc(66vh * (3/4));
+  }
+}

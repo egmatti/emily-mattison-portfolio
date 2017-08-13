@@ -1,0 +1,27 @@
+// ==========================================
+// BUTTONS
+// ==========================================
+
+.button {
+  border: $border-button;
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  padding: $padding-button;
+
+  span {
+    color: $color-button;
+    font-weight: $font-weight-medium;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background: $color-button-hover;
+    border: $border-button-hover;
+
+    span {
+      color: $color-body;
+    }
+  }
+}
