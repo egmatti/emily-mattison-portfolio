@@ -31,18 +31,30 @@ HEADER
     <meta name="msapplication-TileImage" content="images/favicon.ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body id="<?php if (is_front_page()) { echo 'home-page'; } elseif (is_home()) { echo 'the-latest-page'; } else { echo $post->post_name . "-page"; } ?>">
+  <body id="<?php if (is_front_page()) { echo 'home-page'; } elseif (is_home()) { echo 'the-latest-page'; } else { echo $post->post_name . "-page"; } ?>" <?php body_class(); ?>>
 
 
 <!-- HEADER -->
 
     <header>
       <a href="<?php bloginfo('url'); ?>"><img class="main-nav-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-black.svg" alt="<?php bloginfo('name'); ?>"></a>
-      <ul class="main-nav">
+
+      <?php
+        $defaults = array(
+          'container' => false,
+          'theme_location' => 'primary-menu',
+          'menu_class' => 'main-nav'
+        );
+
+        wp_nav_menu( $defaults );
+
+      ?>
+
+      <!-- <ul class="main-nav">
         <li class="main-nav__item--first"><a href="about.html">About</a></li>
         <li class="main-nav__item"><a href="work.html">Work</a></li>
         <li class="main-nav__item--last"><a href="the-latest.html"><span>the   </span>Latest</a></li>
-      </ul>
+      </ul> -->
 
       <i class="main-nav-mobile-icon fa fa-bars" aria-hidden="true"></i>
       <div class="box-shadow-cover"></div>

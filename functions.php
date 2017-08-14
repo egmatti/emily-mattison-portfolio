@@ -1,5 +1,19 @@
 <?php
 
+add_theme_support( 'menus' );
+
+function register_theme_menus() {
+  register_nav_menus(
+    array (
+      'primary-menu' => __( 'Primary Menu' )
+    )
+  );
+}
+
+add_action( 'init', 'register_theme_menus' );
+
+add_theme_support( 'post-thumbnails' );
+
 function emily_mattison_portfolio_styles() {
   wp_enqueue_style('style_css', get_template_directory_uri() . '/style.css');
 }
@@ -89,7 +103,5 @@ function emily_mattison_portfolio_js() {
 }
 
 add_action('wp_enqueue_scripts', 'emily_mattison_portfolio_js');
-
-add_theme_support( 'post-thumbnails' );
 
 ?>
