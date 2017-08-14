@@ -4,6 +4,12 @@
 
 jQuery(document).ready(function($) {
 
+  // MEDIA QUERIES
+
+  const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
+  const mediaQueryMedium = window.matchMedia( "(max-width: 1025px)" );
+
+
   // FIXED SHARE FIGURE ON SCROLL
 
   // Get the position from the top of the page

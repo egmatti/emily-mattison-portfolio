@@ -3,6 +3,12 @@
 // ==========================================
 
 jQuery(document).ready(function($) {
+  
+  // MEDIA QUERIES
+
+  const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
+  const mediaQueryMedium = window.matchMedia( "(max-width: 1025px)" );
+
 
   // SCROLL REVEAL
 
