@@ -8,7 +8,6 @@ THE LATEST PAGE
 */
 ?>
 
-
 <?php get_header(); ?>
 
 
@@ -29,55 +28,23 @@ THE LATEST PAGE
         <h4>Recent</h4>
         <div class="directory-nav-border"></div>
         <div class="directory-nav">
-          <a href="blog-post.html"><div class="directory-nav__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/the-iron-yard.png" alt="Blog Post 7">
-            <article>
-              <span>June 7, 2017</span>
-              <h5>Blog Post 7</h5>
-            </article>
-          </div></a>
-          <a><div class="directory-nav__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/stax.png" alt="Blog Post 6">
-            <article>
-              <span>June 6, 2017</span>
-              <h5>Blog Post 6</h5>
-            </article>
-          </div></a>
-          <a><div class="directory-nav__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/coffee-app/mockups/coffeeapp_mockups_Voyage.png" alt="Blog Post 5">
-            <article>
-              <span>June 5, 2017</span>
-              <h5>Blog Post 5</h5>
-            </article>
-          </div></a>
-          <a><div class="directory-nav__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/rocket.png" alt="Blog Post 4">
-            <article>
-              <span>June 4, 2017</span>
-              <h5>Blog Post 4</h5>
-            </article>
-          </div></a>
-          <a><div class="directory-nav__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/a3c.png" alt="Blog Post 3">
-            <article>
-              <span>June 3, 2017</span>
-              <h5>Blog Post 3</h5>
-            </article>
-          </div></a>
-          <a><div class="directory-nav__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/pablo.png" alt="Blog Post 2">
-            <article>
-              <span>June 2, 2017</span>
-              <h5>Blog Post 2</h5>
-            </article>
-          </div></a>
-          <a><div class="directory-nav__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/sullivan's.png" alt="Blog Post 1">
-            <article>
-              <span>June 1, 2017</span>
-              <h5>Blog Post 1</h5>
-            </article>
-          </div></a>
+
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+            <a href="blog-post.html"><div class="directory-nav__post">
+              <?php if ( has_post_thumbnail() ) : ?>
+                  <img src="<?php the_post_thumbnail_url('full'); ?>" alt="Blog Post 7">
+              <?php endif; ?>
+              <article>
+                <span><?php the_time( get_option( 'date_format' ) ); ?></span>
+                <h5><?php the_title(); ?></h5>
+              </article>
+            </div></a>
+
+          <?php endwhile; else : ?>
+          	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+          <?php endif; ?>
+
         </div>
       </div>
 

@@ -31,7 +31,7 @@ HEADER
     <meta name="msapplication-TileImage" content="images/favicon.ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body id="<?php if (is_front_page()) { echo 'home-page'; } else { echo $post->post_name . "-page"; } ?>">
+  <body id="<?php if (is_front_page()) { echo 'home-page'; } elseif (is_home()) { echo 'the-latest-page'; } else { echo $post->post_name . "-page"; } ?>">
 
 
 <!-- HEADER -->

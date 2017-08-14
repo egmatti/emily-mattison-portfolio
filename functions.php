@@ -1,7 +1,3 @@
-<!-- ==========================================
-FUNCTIONS
-========================================== -->
-
 <?php
 
 function emily_mattison_portfolio_styles() {
@@ -24,6 +20,11 @@ function emily_mattison_portfolio_js() {
   if( is_front_page() )
   {
       wp_enqueue_script('home_js', get_template_directory_uri() . '/js/home.js', array('jquery', 'fontawesome_js', 'velocity_js', 'scrollreveal_js', 'slick_js', 'script_js'), '', false);
+  }
+
+  if( is_home() )
+  {
+      wp_enqueue_script('the-latest_js', get_template_directory_uri() . '/js/the-latest.js', array('jquery', 'fontawesome_js', 'velocity_js', 'scrollreveal_js', 'slick_js', 'script_js'), '', false);
   }
 
   if( is_page_template('page-about.php') )
@@ -74,11 +75,6 @@ function emily_mattison_portfolio_js() {
   if( is_page_template('page-stillwater-shirt.php') )
   {
       wp_enqueue_script('stillwater-shirt_js', get_template_directory_uri() . '/js/stillwater-shirt.js', array('jquery', 'fontawesome_js', 'velocity_js', 'scrollreveal_js', 'slick_js', 'script_js'), '', false);
-  }
-
-  if( is_page_template('page-the-latest.php') )
-  {
-      wp_enqueue_script('the-latest_js', get_template_directory_uri() . '/js/the-latest.js', array('jquery', 'fontawesome_js', 'velocity_js', 'scrollreveal_js', 'slick_js', 'script_js'), '', false);
   }
 
   if( is_page_template('page-toptix.php') )
