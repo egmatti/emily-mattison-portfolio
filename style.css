@@ -2479,6 +2479,11 @@ footer .main-nav__item--first {
     margin-top: 25px; }
   #home-page .blog-post-container h3 {
     padding-top: 18.75px; }
+  #home-page .blog-post-container img {
+    height: auto;
+    margin-top: 25px;
+    object-fit: contain;
+    width: 100%; }
 
 #home-page .directory-nav {
   border: none;

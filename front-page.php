@@ -36,12 +36,22 @@ HOME PAGE
       <div id="blog-div" class="left-column">
         <div class="blog-slider-for">
 
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <?php
+
+            $args = array(
+              'post_type' => 'post',
+              'posts_per_page' => '10'
+            );
+            $slider_for_query = new WP_Query($args);
+
+          ?>
+
+          <?php if ( $slider_for_query->have_posts() ) : while ( $slider_for_query->have_posts() ) : $slider_for_query->the_post(); ?>
 
             <div class="blog-slider-for__post">
               <figure class="share-figure">
                 <?php if ( has_post_thumbnail() ) : ?>
-                    <img src="<?php the_post_thumbnail_url('full'); ?>" alt="Blog Post 7">
+                    <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_post_thumbnail_alt(); ?>">
                 <?php endif; ?>
                 <figcaption>
                   <div class="share-container">
@@ -59,13 +69,11 @@ HOME PAGE
               <article class="blog-post-container">
                 <span><?php the_time( get_option( 'date_format' ) ); ?></span>
                 <h3><?php the_title(); ?></h3>
-                <p><?php the_content(); ?></p>
+                <?php the_content(); ?>
               </article>
             </div>
 
-          <?php endwhile; else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-          <?php endif; ?>
+          <?php endwhile; endif; wp_reset_postdata(); ?>
 
         </div>
       </div>
@@ -73,11 +81,21 @@ HOME PAGE
       <div id="blog-column" class="right-column">
         <div class="blog-slider-nav directory-nav">
 
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <?php
+
+            $args = array(
+              'post_type' => 'post',
+              'posts_per_page' => '10'
+            );
+            $slider_nav_query = new WP_Query($args);
+
+          ?>
+
+          <?php if ( $slider_nav_query->have_posts() ) : while ( $slider_nav_query->have_posts() ) : $slider_nav_query->the_post(); ?>
 
             <div class="blog-slider-nav__post directory-nav__post">
               <?php if ( has_post_thumbnail() ) : ?>
-                  <img src="<?php the_post_thumbnail_url('full'); ?>" alt="Blog Post 7">
+                  <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_post_thumbnail_alt(); ?>">
               <?php endif; ?>
               <article>
                 <span><?php the_time( get_option( 'date_format' ) ); ?></span>
@@ -85,9 +103,7 @@ HOME PAGE
               </article>
             </div>
 
-          <?php endwhile; else : ?>
-  	         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-          <?php endif; ?>
+          <?php endwhile; endif; wp_reset_postdata(); ?>
 
         </div>
       </div>

@@ -224,6 +224,13 @@
   h3 {
     padding-top: 18.75px;
   }
+
+  img {
+    height: auto;
+    margin-top: $margin-body-text;
+    object-fit: contain;
+    width: 100%;
+  }
 }
 
 #home-page .directory-nav {
