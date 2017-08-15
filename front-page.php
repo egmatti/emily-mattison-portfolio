@@ -42,6 +42,7 @@ HOME PAGE
               'post_type' => 'post',
               'posts_per_page' => '10'
             );
+
             $slider_for_query = new WP_Query($args);
 
           ?>
@@ -87,6 +88,7 @@ HOME PAGE
               'post_type' => 'post',
               'posts_per_page' => '10'
             );
+            
             $slider_nav_query = new WP_Query($args);
 
           ?>

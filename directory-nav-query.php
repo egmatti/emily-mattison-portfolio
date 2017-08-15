@@ -8,6 +8,7 @@ DIRECTORY NAV QUERY
     'post_type' => 'post',
     'posts_per_page' => '10'
   );
+  
   $directory_nav_query = new WP_Query($args);
 
 ?>

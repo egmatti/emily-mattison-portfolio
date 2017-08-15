@@ -35,83 +35,107 @@ THE LATEST PAGE
       </div>
 
       <div class="directory">
-        <div class="directory__row--first">
-          <a href="blog-post.html" class="directory__link--first-row"><figure class="directory__figure--first-row">
-            <div class="push-pin-container">
-              <img class="push-pin" src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/push-pin.png" alt="Push pin">
-            </div>
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/the-iron-yard.png" alt="The Iron Yard classroom">
-            <figcaption>
-              <div>
-                <span>June 7, 2017</span>
-                <h2>Blog Post 7</h2>
-              </div>
-            </figcaption>
-          </figure></a>
-        </div>
 
-        <div class="directory__row--second">
-          <a class="directory__link--second-row"><figure class="directory__figure--second-row">
-            <div class="directory__image-container">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/stax.png" alt="Jim Stewart and Estelle Axton from Stax Records">
-            </div>
-            <figcaption>
-              <div>
-                <span>June 6, 2017</span>
-                <h3>Blog Post 6</h3>
-              </div>
-            </figcaption>
-          </figure></a>
-          <a class="directory__link--second-row"><figure class="directory__figure--second-row">
-            <div class="directory__image-container">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/coffee-app.png" alt="Voyage screen from my Coffee App">
-            </div>
-            <figcaption>
-              <div>
-                <span>June 5, 2017</span>
-                <h3>Blog Post 5</h3>
-              </div>
-            </figcaption>
-          </figure></a>
-        </div>
+        <?php
 
-        <div class="directory__row--other">
-          <a class="directory__link--other-row"><figure class="directory__figure--other-row">
-            <div class="directory__image-container">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/rocket-gray-background.png" alt="Early rocket illustrations for Shane Daly">
-            </div>
-            <figcaption>
-              <div>
-                <span>June 4, 2017</span>
-                <h4>Blog Post 4</h4>
-              </div>
-            </figcaption>
-          </figure></a>
-          <a class="directory__link--other-row"><figure class="directory__figure--other-row">
-            <div class="directory__image-container">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/a3c.png" alt="Hip Hop photography panel at the A3C Conference in October 2016">
-            </div>
-            <figcaption>
-              <div>
-                <span>June 3, 2017</span>
-                <h4>Blog Post 3</h4>
-              </div>
-            </figcaption>
-          </figure></a>
-          <a class="directory__link--other-row"><figure class="directory__figure--other-row">
-            <div class="directory__image-container">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/pablo.png" alt="Kanye West performing in Atlanta as part of his 2016 Saint Pablo Tour">
-            </div>
-            <figcaption>
-              <div>
-                <span>June 2, 2017</span>
-                <h4>Blog Post 2</h4>
-              </div>
-            </figcaption>
-          </figure></a>
-        </div>
+          $args = array (
+            'post_type' => 'post'
+          );
 
-        <div class="directory__row--last">
+          $the_latest_query = new WP_Query($args);
+
+        ?>
+
+        <?php
+
+          if ( $the_latest_query->have_posts() ) : while ( $the_latest_query->have_posts() ) :  $the_latest_query->the_post();
+
+            if ( $the_latest_query->current_post == 0 ) {  // first post
+
+        ?>
+              <div class="directory__row--first">
+                <a href="<?php the_permalink(); ?>" class="directory__link--first-row"><figure class="directory__figure--first-row">
+                  <div class="push-pin-container">
+                    <img class="push-pin" src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/push-pin.png" alt="Push pin">
+                  </div>
+                    <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_alt(); ?>">
+                  <figcaption>
+                    <div>
+                      <span><?php the_time( get_option( 'date_format' ) ); ?></span>
+                      <h2><?php the_title(); ?></h2>
+                    </div>
+                  </figcaption>
+                </figure></a>
+              </div>
+
+        <?php
+
+            } elseif ( $the_latest_query->current_post == 1 ) {  // second post
+
+        ?>
+
+            <div class="directory__row--second">
+              <a href="<?php the_permalink(); ?>" class="directory__link--second-row"><figure class="directory__figure--second-row">
+                <div class="directory__image-container">
+                  <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_alt(); ?>">
+                </div>
+                <figcaption>
+                  <div>
+                    <span><?php the_time( get_option( 'date_format' ) ); ?></span>
+                    <h3><?php the_title(); ?></h3>
+                  </div>
+                </figcaption>
+              </figure></a>
+
+        <?php
+
+            } elseif ( $the_latest_query->current_post == 2 ) {  // third post
+
+        ?>
+
+            <a href="<?php the_permalink(); ?>" class="directory__link--second-row"><figure class="directory__figure--second-row">
+              <div class="directory__image-container">
+                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_alt(); ?>">
+              </div>
+              <figcaption>
+                <div>
+                  <span><?php the_time( get_option( 'date_format' ) ); ?></span>
+                  <h3><?php the_title(); ?></h3>
+                </div>
+              </figcaption>
+            </figure></a>
+          </div>
+
+        <?php
+
+            } else {
+
+        ?>
+
+            <div class="directory__row--other">
+              <a href="<?php the_permalink(); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
+                <div class="directory__image-container">
+                  <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_alt(); ?>">
+                </div>
+                <figcaption>
+                  <div>
+                    <span><?php the_time( get_option( 'date_format' ) ); ?></span>
+                    <h4><?php the_title(); ?></h4>
+                  </div>
+                </figcaption>
+              </figure></a>
+            </div>
+
+        <?php
+
+            }
+
+          endwhile; endif; wp_reset_postdata();
+
+        ?>
+
+
+        <!-- <div class="directory__row--last">
           <a class="directory__link--other-row"><figure class="directory__figure--other-row">
             <div class="directory__image-container">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/sullivan's.png" alt="My golden retriever enjoying a great Saturday at Sullivan's Island">
@@ -123,9 +147,9 @@ THE LATEST PAGE
               </div>
             </figcaption>
           </figure></a>
+        </div> -->
 
       </div>
-
     </section>
 
 
