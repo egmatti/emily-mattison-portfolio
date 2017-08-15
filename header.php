@@ -39,30 +39,19 @@ HEADER
     <header>
       <a href="<?php bloginfo('url'); ?>"><img class="main-nav-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-black.svg" alt="<?php bloginfo('name'); ?>"></a>
 
-      <?php
-        $defaults = array(
-          'container' => false,
-          'theme_location' => 'primary-menu',
-          'menu_class' => 'main-nav'
-        );
-
-        wp_nav_menu( $defaults );
-
-      ?>
-
-      <!-- <ul class="main-nav">
-        <li class="main-nav__item--first"><a href="about.html">About</a></li>
-        <li class="main-nav__item"><a href="work.html">Work</a></li>
-        <li class="main-nav__item--last"><a href="the-latest.html"><span>the   </span>Latest</a></li>
-      </ul> -->
+      <ul class="main-nav">
+        <li class="main-nav__item--first"><a href="<?php echo get_page_link( get_page_by_title( "About" )->ID ); ?>">About</a></li>
+        <li class="main-nav__item"><a href="<?php echo get_page_link( get_page_by_title( "Work" )->ID ); ?>">Work</a></li>
+        <li class="main-nav__item--last"><a href="<?php echo get_page_link( get_page_by_title( "The Latest" )->ID ); ?>"><span>the   </span>Latest</a></li>
+      </ul>
 
       <i class="main-nav-mobile-icon fa fa-bars" aria-hidden="true"></i>
       <div class="box-shadow-cover"></div>
       <div class="main-nav-mobile-dropdown">
         <ul class="main-nav-mobile">
-          <li class="main-nav-mobile__item"><a href="about.html">About</a></li>
-          <li class="main-nav-mobile__item"><a href="work.html">Work</a></li>
-          <li class="main-nav-mobile__item--last"><a href="the-latest.html"><span>the   </span>Latest</a></li>
+          <li class="main-nav-mobile__item"><a href="<?php echo get_page_link( get_page_by_title( "About" )->ID ); ?>">About</a></li>
+          <li class="main-nav-mobile__item"><a href="<?php echo get_page_link( get_page_by_title( "Work" )->ID ); ?>">Work</a></li>
+          <li class="main-nav-mobile__item--last"><a href="<?php echo get_page_link( get_page_by_title( "The Latest" )->ID ); ?>"><span>the   </span>Latest</a></li>
         </ul>
       </div>
     </header>

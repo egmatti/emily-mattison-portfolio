@@ -15,9 +15,9 @@ FOOTER
       </div>
       <div class="footer-row-bottom">
         <ul class="main-nav">
-          <li class="main-nav__item--first"><a href="about.html">About</a></li>
-          <li class="main-nav__item"><a href="work.html">Work</a></li>
-          <li class="main-nav__item--last"><a href="the-latest.html"><span>the   </span>Latest</a></li>
+          <li class="main-nav__item--first"><a href="<?php echo get_page_link( get_page_by_title( "About" )->ID ); ?>">About</a></li>
+          <li class="main-nav__item"><a href="<?php echo get_page_link( get_page_by_title( "Work" )->ID ); ?>">Work</a></li>
+          <li class="main-nav__item--last"><a href="<?php echo get_page_link( get_page_by_title( "The Latest" )->ID ); ?>"><span>the   </span>Latest</a></li>
         </ul>
         <span class="footer-copyright">&copy; Emily Mattison <?php echo date('Y'); ?> &bull; All Rights Reserved</span>
       </div>
