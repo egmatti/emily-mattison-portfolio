@@ -29,6 +29,11 @@ function emily_mattison_portfolio_js() {
       wp_enqueue_script('the-latest_js', get_template_directory_uri() . '/js/the-latest.js', array('jquery', 'fontawesome_js', 'velocity_js', 'scrollreveal_js', 'slick_js', 'script_js'), '', false);
   }
 
+  if( is_single() )
+  {
+      wp_enqueue_script('blog-post_js', get_template_directory_uri() . '/js/blog-post.js', array('jquery', 'fontawesome_js', 'velocity_js', 'scrollreveal_js', 'slick_js', 'script_js'), '', false);
+  }
+
   if( is_page_template('page-about.php') )
   {
       wp_enqueue_script('about_js', get_template_directory_uri() . '/js/about.js', array('jquery', 'fontawesome_js', 'velocity_js', 'scrollreveal_js', 'slick_js', 'script_js'), '', false);
@@ -91,5 +96,13 @@ function emily_mattison_portfolio_js() {
 }
 
 add_action('wp_enqueue_scripts', 'emily_mattison_portfolio_js');
+
+function get_the_post_thumbnail_alt($post_id) {
+  return get_post_meta(get_post_thumbnail_id($post_id), '_wp_attachment_image_alt', true);
+}
+
+function the_post_thumbnail_alt($post_id) {
+  echo get_the_post_thumbnail_alt($post_id);
+}
 
 ?>

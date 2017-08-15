@@ -3508,6 +3508,7 @@ footer .main-nav__item--first {
   height: auto;
   left: 60px;
   margin-bottom: 125px;
+  margin-top: -25px;
   position: relative;
   width: 600px; }
   @media (min-width: 0px) and (max-width: 767px) {
@@ -3524,14 +3525,10 @@ footer .main-nav__item--first {
       margin: 0 5% 62.5px 5%;
       position: relative;
       width: 90%; } }
-
-#blog-post-page .blog-post__paragraph--first {
-  margin-top: 0px; }
-
-#blog-post-page .blog-post__image {
-  margin-top: 25px;
-  object-fit: contain;
-  width: 100%; }
+  #blog-post-page .blog-post-container img {
+    margin-top: 25px;
+    object-fit: contain;
+    width: 100%; }
 
 #blog-post-page .directory-nav-container {
   float: right;

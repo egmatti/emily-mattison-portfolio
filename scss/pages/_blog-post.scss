@@ -142,6 +142,7 @@
   height: auto;
   left: 60px;
   margin-bottom: $margin-section-vertical;
+  margin-top: -25px;
   position: relative;
   width: 600px;
 
@@ -160,16 +161,12 @@
     position: relative;
     width: $width-page-blog-tablet;
   }
-}
 
-#blog-post-page .blog-post__paragraph--first {
-  margin-top: 0px;
-}
-
-#blog-post-page .blog-post__image {
-  margin-top: $margin-body-text;
-  object-fit: contain;
-  width: 100%;
+  img {
+    margin-top: $margin-body-text;
+    object-fit: contain;
+    width: 100%;
+  }
 }
 
 #blog-post-page .directory-nav-container {
