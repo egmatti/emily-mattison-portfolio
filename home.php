@@ -31,9 +31,9 @@ THE LATEST PAGE
 
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <a href="blog-post.html"><div class="directory-nav__post">
+            <a href="<?php the_permalink(); ?>"><div class="directory-nav__post">
               <?php if ( has_post_thumbnail() ) : ?>
-                  <img src="<?php the_post_thumbnail_url('full'); ?>" alt="Blog Post 7">
+                  <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_post_thumbnail_alt(); ?>">
               <?php endif; ?>
               <article>
                 <span><?php the_time( get_option( 'date_format' ) ); ?></span>
@@ -41,9 +41,7 @@ THE LATEST PAGE
               </article>
             </div></a>
 
-          <?php endwhile; else : ?>
-          	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-          <?php endif; ?>
+          <?php endwhile; endif; ?>
 
         </div>
       </div>

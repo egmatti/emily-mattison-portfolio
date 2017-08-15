@@ -3526,7 +3526,6 @@ footer .main-nav__item--first {
       position: relative;
       width: 90%; } }
   #blog-post-page .blog-post-container img {
-    margin-top: 25px;
     object-fit: contain;
     width: 100%; }
 

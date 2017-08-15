@@ -1,12 +1,15 @@
 <?php
 
-add_theme_support( 'post-thumbnails' );
+// ENQUEUE STYLES
 
 function emily_mattison_portfolio_styles() {
   wp_enqueue_style('style_css', get_template_directory_uri() . '/style.css');
 }
 
 add_action('wp_enqueue_scripts', 'emily_mattison_portfolio_styles');
+
+
+// ENQUEUE SCRIPTS
 
 function emily_mattison_portfolio_js() {
   wp_enqueue_script('fontawesome_js', 'https://use.fontawesome.com/ab03b8820e.js', '', '', false);
@@ -96,6 +99,14 @@ function emily_mattison_portfolio_js() {
 }
 
 add_action('wp_enqueue_scripts', 'emily_mattison_portfolio_js');
+
+
+// ADD POST THUMBNAILS
+
+add_theme_support( 'post-thumbnails' );
+
+
+// POST THUMBNAIL ALT TAGS
 
 function get_the_post_thumbnail_alt($post_id) {
   return get_post_meta(get_post_thumbnail_id($post_id), '_wp_attachment_image_alt', true);
