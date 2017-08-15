@@ -117,7 +117,7 @@ function the_post_thumbnail_alt($post_id) {
 }
 
 
-// REMOVE WIDTH ATTRIBUTE FROM POST IMAGES
+// REMOVE WIDTH ATTRIBUTE FROM ATTACHMENT IMAGES
 
 add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
 add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );

@@ -29,19 +29,7 @@ THE LATEST PAGE
         <div class="directory-nav-border"></div>
         <div class="directory-nav">
 
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-            <a href="<?php the_permalink(); ?>"><div class="directory-nav__post">
-              <?php if ( has_post_thumbnail() ) : ?>
-                  <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_post_thumbnail_alt(); ?>">
-              <?php endif; ?>
-              <article>
-                <span><?php the_time( get_option( 'date_format' ) ); ?></span>
-                <h5><?php the_title(); ?></h5>
-              </article>
-            </div></a>
-
-          <?php endwhile; endif; ?>
+          <?php @include 'directory-nav-query.php'; ?>
 
         </div>
       </div>
