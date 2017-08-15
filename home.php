@@ -134,21 +134,6 @@ THE LATEST PAGE
 
         ?>
 
-
-        <!-- <div class="directory__row--last">
-          <a class="directory__link--other-row"><figure class="directory__figure--other-row">
-            <div class="directory__image-container">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/the-latest/blog-posts/sullivan's.png" alt="My golden retriever enjoying a great Saturday at Sullivan's Island">
-            </div>
-            <figcaption>
-              <div>
-                <span>June 1, 2017</span>
-                <h4>Blog Post 1</h4>
-              </div>
-            </figcaption>
-          </figure></a>
-        </div> -->
-
       </div>
     </section>
 

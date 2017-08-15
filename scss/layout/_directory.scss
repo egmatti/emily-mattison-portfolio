@@ -2,7 +2,11 @@
 // DIRECTORY
 // ==========================================
 
-.directory__row--second, .directory__row--other, .directory__row--last {
+.directory {
+  margin-bottom: -50px;
+}
+
+.directory__row--second, .directory__row--other {
   @include flexbox($direction: row, $justify: space-between);
   margin: $margin-div 0;
   transform: translateY(-50px);
@@ -12,8 +16,4 @@
     @include flexbox($direction: column);
     margin: 0;
   }
-}
-
-.directory__row--last {
-  margin-bottom: -50px;
 }

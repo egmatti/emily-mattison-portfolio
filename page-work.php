@@ -187,7 +187,7 @@ WORK PAGE
           </figure></a>
         </div>
 
-        <div class="directory__row--last">
+        <div class="directory__row--other">
           <a href="<?php echo get_page_link( get_page_by_title( "Chronicle" )->ID ); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
             <div class="directory__image-container">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/chronicle-magazine.png" alt="Chronicle Magazine Spring 2014 and marketing collateral">
