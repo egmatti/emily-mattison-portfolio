@@ -189,9 +189,9 @@ HOME PAGE
       </div>
 
       <div class="button-container">
-        <div class="button button-instagram">
+        <a href="https://www.instagram.com/emilymattisondesign/" target="_blank"><div class="button button-instagram">
           <span>Follow @emilymattisondesign on Instagram</span>
-        </div>
+        </div></a>
       </div>
 
       <div class="button-container--mobile">
