@@ -39,7 +39,8 @@ THE LATEST PAGE
         <?php
 
           $args = array (
-            'post_type' => 'post'
+            'post_type' => 'post',
+            'posts_per_page' => -1
           );
 
           $the_latest_query = new WP_Query($args);
