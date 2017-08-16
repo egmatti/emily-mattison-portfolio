@@ -60,9 +60,9 @@ HOME PAGE
                   </div>
                   <div class="blog-social-media-container">
                     <ul class="blog-social-media">
-                      <li class="blog-social-media__item"><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li class="blog-social-media__item"><a><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                      <li class="blog-social-media__item"><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li class="blog-social-media__item"><a href="<?php the_field( 'facebook_share', false ); ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li class="blog-social-media__item"><a href="<?php the_field( 'pinterest_share', false ) ?>" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                      <li class="blog-social-media__item"><a href="<?php the_field( 'twitter_share', false ); ?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     </ul>
                   </div>
                 </figcaption>

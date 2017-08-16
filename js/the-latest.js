@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
 
   const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
   const mediaQueryMedium = window.matchMedia( "(max-width: 1025px)" );
-  
+
 
   // DIRECTORY NAV HEIGHT AND DIRECTORY ROW POSITIONING
 
