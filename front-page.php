@@ -88,7 +88,7 @@ HOME PAGE
               'post_type' => 'post',
               'posts_per_page' => '10'
             );
-            
+
             $slider_nav_query = new WP_Query($args);
 
           ?>
@@ -109,6 +109,91 @@ HOME PAGE
 
         </div>
       </div>
+    </section>
+
+
+
+<!-- INSTAGRAM SECTION -->
+
+    <section class="instagram-section">
+
+      <div class=instagram-div>
+        <div class="instagram-slider-for--desktop">
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-1.png" alt="Instagram 1"/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-2.png" alt="Instagram 2"/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-3.png" alt="Instagram 3"/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-4.png" alt="Instagram 4"/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-5.png" alt="Instagram 5"/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-6.png" alt="Instagram 6"/>
+          </div>
+        </div>
+
+        <div class="instagram-slider-for--tablet">
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-1.png" alt=""/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-2.png" alt=""/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-3.png" alt=""/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-4.png" alt=""/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-5.png" alt=""/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-6.png" alt=""/>
+          </div>
+        </div>
+
+        <div class="instagram-slider-for--mobile">
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-1.png" alt=""/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-2.png" alt=""/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-3.png" alt=""/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-4.png" alt=""/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-5.png" alt=""/>
+          </div>
+          <div class="instagram-slider-for__post">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-6.png" alt=""/>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <div class="button button-instagram">
+          <span>Follow @emdesign on Instagram</span>
+        </div>
+      </div>
+
+      <div class="button-container--mobile">
+        <div class="button button-instagram">
+          <span>Follow on Instagram</span>
+        </div>
+      </div>
+
     </section>
 
 
