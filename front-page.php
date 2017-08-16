@@ -112,7 +112,6 @@ HOME PAGE
     </section>
 
 
-
 <!-- INSTAGRAM SECTION -->
 
     <section class="instagram-section">
@@ -201,6 +200,11 @@ HOME PAGE
       </div>
 
     </section>
+
+
+<!-- CONTACT SECTION -->
+
+    <?php @include 'contact-form.php'; ?>
 
 
 <?php get_footer(); ?>

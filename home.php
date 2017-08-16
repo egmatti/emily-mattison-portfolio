@@ -139,6 +139,6 @@ THE LATEST PAGE
 
       </div>
     </section>
-
+    
 
 <?php get_footer(); ?>
