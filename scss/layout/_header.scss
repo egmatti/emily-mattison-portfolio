@@ -27,6 +27,18 @@ header .main-nav__item--last {
 }
 
 header .main-nav-mobile-icon {
-  float: right;
-  margin-right: $margin-nav;
+  display: none;
+  font-size: 1.75rem;
+
+  @include media-query(small) {
+    @include vertical-align();
+    color: $color-nav;
+    display: inline-block;
+    float: right;
+    margin-right: $margin-nav;
+
+    &:hover {
+      color: $color-nav;
+    }
+  }
 }

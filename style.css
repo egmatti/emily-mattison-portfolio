@@ -1242,8 +1242,21 @@ header .main-nav__item--last {
   padding-right: 0; }
 
 header .main-nav-mobile-icon {
-  float: right;
-  margin-right: 5%; }
+  display: none;
+  font-size: 1.75rem; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    header .main-nav-mobile-icon {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      color: #0b0b0b;
+      display: inline-block;
+      float: right;
+      margin-right: 5%; }
+      header .main-nav-mobile-icon:hover {
+        color: #0b0b0b; } }
 
 footer {
   background: #fff;
@@ -1297,7 +1310,8 @@ footer .main-nav-logo {
       padding-right: 0; }
 
 footer .fa {
-  border: none; }
+  border: none;
+  font-size: 1.75rem; }
 
 footer .main-nav {
   float: left;
@@ -2444,6 +2458,7 @@ footer .main-nav__item--first {
   list-style-type: none; }
 
 #home-page .blog-section .fa {
+  font-size: 1.75rem;
   padding: 0 35px; }
 
 #home-page .blog-section .fa-facebook, .fa-pinterest-p {
