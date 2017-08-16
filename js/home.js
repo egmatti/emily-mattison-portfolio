@@ -42,8 +42,8 @@ jQuery(document).ready(function($) {
     asNavFor: ".blog-slider-for",
     infinite: false,
     focusOnSelect: true,
-    slidesToScroll: 7,
-    slidesToShow: 7,
+    slidesToScroll: 10,
+    slidesToShow: 10,
     vertical: true
   });
 

@@ -7,7 +7,7 @@
 }
 
 .directory__row--second, .directory__row--other {
-  @include flexbox($direction: row, $justify: space-between);
+  @include flexbox($direction: row, $justify: space-between, $wrap: wrap);
   margin: $margin-div 0;
   transform: translateY(-50px);
   width: 100%;

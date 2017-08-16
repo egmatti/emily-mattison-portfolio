@@ -1394,6 +1394,7 @@ footer .main-nav__item--first {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 50px 0;
   transform: translateY(-50px);
   width: 100%; }
@@ -3396,6 +3397,24 @@ footer .main-nav__item--first {
 #the-latest-page .push-pin-container {
   position: absolute;
   top: -15px; }
+
+#the-latest-page .directory {
+  margin-bottom: -75px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #the-latest-page .directory {
+      margin-bottom: -50px; } }
+
+#the-latest-page .directory__row--second {
+  margin-bottom: 25px; }
+  @media (min-width: 0px) and (max-width: 767px) {
+    #the-latest-page .directory__row--second {
+      margin-bottom: 0; } }
+
+#the-latest-page .directory__row--other {
+  margin: 0; }
+
+#the-latest-page .directory__figure--other-row {
+  margin: 25px 0; }
 
 #blog-post-page .hero-section {
   background: url("../emily-mattison-portfolio/images/the-latest/corkboard.png");

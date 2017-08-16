@@ -106,25 +106,25 @@ THE LATEST PAGE
             </figure></a>
           </div>
 
+          <div class="directory__row--other">
+
         <?php
 
             } else {
 
         ?>
 
-            <div class="directory__row--other">
-              <a href="<?php the_permalink(); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
-                <div class="directory__image-container">
-                  <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_alt(); ?>">
+            <a href="<?php the_permalink(); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
+              <div class="directory__image-container">
+                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_post_thumbnail_alt(); ?>">
+              </div>
+              <figcaption>
+                <div>
+                  <span><?php the_time( get_option( 'date_format' ) ); ?></span>
+                  <h4><?php the_title(); ?></h4>
                 </div>
-                <figcaption>
-                  <div>
-                    <span><?php the_time( get_option( 'date_format' ) ); ?></span>
-                    <h4><?php the_title(); ?></h4>
-                  </div>
-                </figcaption>
-              </figure></a>
-            </div>
+              </figcaption>
+            </figure></a>
 
         <?php
 
@@ -133,6 +133,8 @@ THE LATEST PAGE
           endwhile; endif; wp_reset_postdata();
 
         ?>
+
+        </div>
 
       </div>
     </section>
