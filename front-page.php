@@ -142,45 +142,49 @@ HOME PAGE
         </div>
 
         <div class="instagram-slider-for--tablet">
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-1.png" alt=""/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-2.png" alt=""/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-3.png" alt=""/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-4.png" alt=""/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-5.png" alt=""/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-6.png" alt=""/>
-          </div>
+
+          <?php
+
+            $args = array(
+              'post_type' => 'instagram_post',
+              'posts_per_page' => '12'
+            );
+
+            $instagram_tablet_query = new WP_Query($args);
+
+          ?>
+
+          <?php if ( $instagram_tablet_query->have_posts() ) : while ( $instagram_tablet_query->have_posts() ) : $instagram_tablet_query->the_post(); ?>
+
+            <div class="instagram-slider-for__post">
+              <?php the_content(); ?><img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/></a>
+            </div>
+
+          <?php endwhile; endif; wp_reset_postdata(); ?>
+
         </div>
 
         <div class="instagram-slider-for--mobile">
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-1.png" alt=""/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-2.png" alt=""/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-3.png" alt=""/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-4.png" alt=""/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-5.png" alt=""/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-6.png" alt=""/>
-          </div>
+
+          <?php
+
+            $args = array(
+              'post_type' => 'instagram_post',
+              'posts_per_page' => '12'
+            );
+
+            $instagram_mobile_query = new WP_Query($args);
+
+          ?>
+
+          <?php if ( $instagram_mobile_query->have_posts() ) : while ( $instagram_mobile_query->have_posts() ) : $instagram_mobile_query->the_post(); ?>
+
+            <div class="instagram-slider-for__post">
+              <?php the_content(); ?><img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/></a>
+            </div>
+
+          <?php endwhile; endif; wp_reset_postdata(); ?>
+
         </div>
       </div>
 
