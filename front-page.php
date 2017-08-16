@@ -119,24 +119,26 @@ HOME PAGE
 
       <div class=instagram-div>
         <div class="instagram-slider-for--desktop">
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-1.png" alt="Instagram 1"/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-2.png" alt="Instagram 2"/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-3.png" alt="Instagram 3"/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-4.png" alt="Instagram 4"/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-5.png" alt="Instagram 5"/>
-          </div>
-          <div class="instagram-slider-for__post">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/home/insta-6.png" alt="Instagram 6"/>
-          </div>
+
+          <?php
+
+            $args = array(
+              'post_type' => 'instagram_post',
+              'posts_per_page' => '12'
+            );
+
+            $instagram_desktop_query = new WP_Query($args);
+
+          ?>
+
+          <?php if ( $instagram_desktop_query->have_posts() ) : while ( $instagram_desktop_query->have_posts() ) : $instagram_desktop_query->the_post(); ?>
+
+            <div class="instagram-slider-for__post">
+              <?php the_content(); ?><img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/></a>
+            </div>
+
+          <?php endwhile; endif; wp_reset_postdata(); ?>
+
         </div>
 
         <div class="instagram-slider-for--tablet">
@@ -184,7 +186,7 @@ HOME PAGE
 
       <div class="button-container">
         <div class="button button-instagram">
-          <span>Follow @emdesign on Instagram</span>
+          <span>Follow @emilymattisondesign on Instagram</span>
         </div>
       </div>
 
