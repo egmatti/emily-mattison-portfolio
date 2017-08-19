@@ -31,7 +31,7 @@ ABOUT PAGE
           <h1 class="center">Hi, I'm Emily!</h1>
           <p class="large-body-text center">I'm a graphic designer and web developer with a passion for helping brands and artists show off the things that make them great. I also enjoy listening to music and playing with my energetic golden retriever.</p>
           <p class="large-body-text center">What started off as a willingness to help the organizations I was a part of in college create fun posters and brochures has transformed into a life-long love of design and a desire to help others embrace their identities in cool, visually appealing ways.</p>
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/images/about/flower.png" alt="Magnolia flower"/>
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/images/about/notebook.png" alt="Notebook with magnolia flower sketch"/>
         </div>
       </div>
     </section>
@@ -43,7 +43,7 @@ ABOUT PAGE
       <div class="project-main-image-section__background">
       </div>
       <div class="project-main-image-section__image-container">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/toptix-proposal.png" alt=""/>
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/about/portrait.png" alt=""/>
       </div>
     </section>
 
