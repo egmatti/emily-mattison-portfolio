@@ -120,4 +120,12 @@ jQuery(document).ready(function($) {
     slidesToShow: 3
   });
 
+
+  $("#coffee-app-page .project-double-slider-section .slick-next").on("click", function() {
+    $(".project-double-slider-nav img").css({"opacity": 1, "transform": "none", "-webit-transform": "none"});
+  });
+  $("#coffee-app-page .project-double-slider-section .slick-prev").on("click", function() {
+    $(".project-double-slider-nav img").css({"opacity": 1, "transform": "none", "-webit-transform": "none"});
+  });
+
 });

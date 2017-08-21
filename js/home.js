@@ -93,4 +93,18 @@ jQuery(document).ready(function($) {
    vertical: false
   });
 
+  $("#home-page .instagram-section .slick-next").on("click", function() {
+    $(".instagram-slider-for--desktop img").css({"opacity": 1, "transform": "none", "-webit-transform": "none"});
+  });
+  $("#home-page .instagram-section .slick-prev").on("click", function() {
+    $(".instagram-slider-for--desktop img").css({"opacity": 1, "transform": "none", "-webit-transform": "none"});
+  });
+
+  $("#home-page .instagram-section .slick-next").on("click", function() {
+    $(".instagram-slider-for--tablet img").css({"opacity": 1, "transform": "none", "-webit-transform": "none"});
+  });
+  $("#home-page .instagram-section .slick-prev").on("click", function() {
+    $(".instagram-slider-for--tablet img").css({"opacity": 1, "transform": "none", "-webit-transform": "none"});
+  });
+
 });
