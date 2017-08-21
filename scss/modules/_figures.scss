@@ -142,6 +142,14 @@
       overflow: hidden;
       width: 100%;
 
+      @include media-query(large) {
+        min-height: 296.5px;
+      }
+
+      @include media-query(medium) {
+        min-height: 145.5px;
+      }
+
       img {
         object-fit: cover;
       }
@@ -196,6 +204,14 @@
       // Height is being calculated in script.js
       overflow: hidden;
       width: 100%;
+
+      @include media-query(large) {
+        min-height: 184.5px;
+      }
+
+      @include media-query(medium) {
+        min-height: 83.5px;
+      }
 
       img {
         object-fit: cover;

@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
         $overviewDescription.velocity({translateY: "0px"});
         $overviewButton.velocity({translateY: "0px"});
       } else {
-        // window width is at least 767px
+        // window width is at least 1025px
         $overviewDescription.velocity({opacity: 1, translateY: "-30px"}, {visibility: "visible", duration: 500, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)"});
         $overviewButton.velocity({opacity: 1, translateY: "-30px"}, {visibility: "visible", delay: 475, duration: 500, easing: "cubic-bezier(0.6, 0.2, 0.1, 1)"});
       }

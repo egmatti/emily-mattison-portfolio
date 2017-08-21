@@ -106,7 +106,9 @@ WORK PAGE
 
         <div class="directory__row--second">
           <a href="<?php echo get_page_link( get_page_by_title( "Dog Adoption" )->ID ); ?>" class="directory__link--second-row"><figure class="directory__figure--second-row">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/dog-adoption.png" alt="Dog adoption website my teammates and I designed while at The Iron Yard">
+              <div class="directory__image-container">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/dog-adoption.png" alt="Dog adoption website my teammates and I designed while at The Iron Yard">
+              </div>
             <figcaption>
               <div>
                 <h3>Dog Adoption Website</h3>
@@ -127,7 +129,9 @@ WORK PAGE
 
         <div class="directory__row--other">
           <a href="<?php echo get_page_link( get_page_by_title( "Coffee App" )->ID ); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/coffee-app.png" alt="Coffee app I designed while at The Iron Yard">
+              <div class="directory__image-container">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/coffee-app.png" alt="Coffee app I designed while at The Iron Yard">
+              </div>
             <figcaption>
               <div>
                 <h4>Coffee App</h4>
@@ -135,7 +139,9 @@ WORK PAGE
             </figcaption>
           </figure></a>
           <a href="<?php echo get_page_link( get_page_by_title( "Dogtooth Cover Art" )->ID ); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/dogtooth-cover-art.png" alt="Album artwork I designed for hip hop producer Dogtooth">
+              <div class="directory__image-container">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/dogtooth-cover-art.png" alt="Album artwork I designed for hip hop producer Dogtooth">
+              </div>
             <figcaption>
               <div>
                 <h4>Dogtooth Cover Art</h4>

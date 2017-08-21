@@ -5,6 +5,12 @@
 
 jQuery(document).ready(function($) {
 
+  // MEDIA QUERIES
+
+  const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
+  const mediaQueryMedium = window.matchMedia( "(max-width: 1025px)" );
+
+
   // FIXDED HEADER ON SCROLL
 
   var lastScrollTop = 0;
@@ -70,24 +76,33 @@ jQuery(document).ready(function($) {
 
   // DIRECTORY ROW FIGURE HEIGHT
 
-  $(document).ready(function(){
-    var secondRowFigureWidth = $(".directory__figure--second-row .directory__image-container").outerWidth();
-    var secondRowFigureHeight = secondRowFigureWidth / 2;
+  var secondRowFigureWidth = $(".directory__figure--second-row .directory__image-container").outerWidth();
+  var secondRowFigureHeight = secondRowFigureWidth / 2;
 
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
     $(".directory__figure--second-row .directory__image-container").css({"height": secondRowFigureHeight});
-  });
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+    $(".directory__figure--second-row .directory__image-container").css({"height": secondRowFigureHeight, "min-height": 145.5});
+  } else {
+    // window width is at least 1025px
+    $(".directory__figure--second-row .directory__image-container").css({"height": secondRowFigureHeight, "min-height": 296.5});
+  };
 
-  $(document).ready(function(){
-    var otherRowFigureWidth = $(".directory__figure--other-row .directory__image-container").outerWidth();
-    var otherRowFigureHeight = otherRowFigureWidth / 2;
 
+  var otherRowFigureWidth = $(".directory__figure--other-row .directory__image-container").outerWidth();
+  var otherRowFigureHeight = otherRowFigureWidth / 2;
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
     $(".directory__figure--other-row .directory__image-container").css({"height": otherRowFigureHeight});
-  });
-
-
-  // MEDIA QUERIES
-
-  const mediaQuerySmall = window.matchMedia( "(max-width: 767px)" );
-  const mediaQueryMedium = window.matchMedia( "(max-width: 1025px)" );
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+    $(".directory__figure--other-row .directory__image-container").css({"height": otherRowFigureHeight, "min-height": 83.5});
+  } else {
+    // window width is at least 1025px
+    $(".directory__figure--other-row .directory__image-container").css({"height": otherRowFigureHeight, "min-height": 184.5});
+  };
 
 });
