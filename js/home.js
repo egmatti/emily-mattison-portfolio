@@ -54,8 +54,11 @@ jQuery(document).ready(function($) {
     if (mediaQuerySmall.matches) {
       // window width is less than 767px
       $("#home-page .blog-section .blog-slider-nav").css({"height": 300});
+    } else if (mediaQueryMedium.matches) {
+      // window width is less than 1025px
+      $("#home-page .blog-section .blog-slider-nav").css({"height": 300});
     } else {
-      // window width is at least 767px
+      // window width is at least 1025px
       var blogPostHeight = $("#home-page .blog-section .slick-current").outerHeight();
       $("#home-page .blog-section .blog-slider-nav").css({"height": blogPostHeight});
 

@@ -83,7 +83,10 @@
   }
 
   @include media-query(medium) {
-    width: 66%;
+    display: block;
+    float: none;
+    position: static;
+    width: 100%;
   }
 }
 
@@ -99,8 +102,10 @@
   }
 
   @include media-query(medium) {
-    left: 66%;
-    width: 33%;
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
   }
 }
 
@@ -115,6 +120,7 @@
   }
 
   @include media-query(medium) {
+    float: none;
     width: 100%;
   }
 
@@ -127,6 +133,11 @@
     padding-bottom: $padding-div;
     padding-top: $padding-div;
     width: 100%;
+
+    @include media-query(medium) {
+      padding-bottom: $padding-section;
+      padding-top: $padding-section;
+    }
 
     figure {
       float: left;
@@ -205,14 +216,14 @@
 
   @include media-query(small) {
     float: none;
-    margin: $margin-page-mobile-horizontal;
+    margin: 0 $margin-page-mobile-horizontal;
     padding-right: none;
     width: $width-page-mobile;
   }
 
   @include media-query(medium) {
     float: none;
-    margin: $margin-page-tablet-horizontal;
+    margin: 0 $margin-page-tablet-horizontal;
     padding-right: none;
     width: $width-page-tablet;
   }

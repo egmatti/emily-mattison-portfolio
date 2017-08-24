@@ -2485,7 +2485,10 @@ footer .main-nav__item--first {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #home-page #blog-div {
-      width: 66%; } }
+      display: block;
+      float: none;
+      position: static;
+      width: 100%; } }
 
 #home-page #blog-column {
   background: #fff;
@@ -2498,8 +2501,10 @@ footer .main-nav__item--first {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #home-page #blog-column {
-      left: 66%;
-      width: 33%; } }
+      display: block;
+      left: 0;
+      position: static;
+      width: 100%; } }
 
 #home-page .blog-slider-for {
   background: #f3f3f3;
@@ -2511,6 +2516,7 @@ footer .main-nav__item--first {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #home-page .blog-slider-for {
+      float: none;
       width: 100%; } }
   #home-page .blog-slider-for div {
     overflow: visible; }
@@ -2519,6 +2525,10 @@ footer .main-nav__item--first {
     padding-bottom: 50px;
     padding-top: 50px;
     width: 100%; }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      #home-page .blog-slider-for__post {
+        padding-bottom: 75px;
+        padding-top: 75px; } }
     #home-page .blog-slider-for__post figure {
       float: left;
       position: relative;
@@ -2577,13 +2587,13 @@ footer .main-nav__item--first {
   @media (min-width: 0px) and (max-width: 767px) {
     #home-page .blog-post-container {
       float: none;
-      margin: 10%;
+      margin: 0 10%;
       padding-right: none;
       width: 80%; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     #home-page .blog-post-container {
       float: none;
-      margin: 10%;
+      margin: 0 10%;
       padding-right: none;
       width: 80%; } }
   #home-page .blog-post-container span {
