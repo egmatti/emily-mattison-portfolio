@@ -42,7 +42,7 @@ fieldset {
   @include media-query(medium) {
     display: block;
     margin: 0 $margin-page-tablet-horizontal;
-    padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
+    padding-bottom: ($margin-body-text + ($margin-body-text / 4));
     position: static;
     width: $width-page-tablet;
   }
@@ -188,14 +188,6 @@ fieldset {
 
 .contact-form .button-div {
   // Height is being calculated in script.js
-
-  @include media-query(small) {
-    padding-bottom: $padding-div;
-  }
-
-  @include media-query(medium) {
-    padding-bottom: $padding-div;
-  }
 }
 
 .contact-form .button-container {
