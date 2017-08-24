@@ -74,6 +74,22 @@ jQuery(document).ready(function($) {
   });
 
 
+  // CONTACT FORM BUTTON DIV HEIGHT
+
+  var fieldsetHeight = $(".contact-form fieldset").outerHeight();
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+
+  } else {
+    // window width is at least 1025px
+    $(".contact-form .button-div").css({"height": fieldsetHeight});
+  };
+
+
   // DIRECTORY ROW FIGURE HEIGHT
 
   var secondRowFigureWidth = $(".directory__figure--second-row .directory__image-container").outerWidth();

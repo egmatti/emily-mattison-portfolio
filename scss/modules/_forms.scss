@@ -2,16 +2,85 @@
 // FORMS
 // ==========================================
 
-form {
-  margin-top: $margin-div;
-  margin-bottom: $margin-div;
+.contact-form {
+  padding-top: $margin-div;
+  padding-bottom: $margin-div;
+  width: 100%;
+
+  @include media-query(small) {
+    padding-top: $padding-div;
+    padding-bottom: $padding-div;
+  }
+
+  @include media-query(medium) {
+    padding-top: $padding-div;
+    padding-bottom: $padding-div;
+  }
+}
+
+fieldset {
+  border: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+.contact-form .left-column {
+  margin-left: 7.5%;
+  width: 67.5%;
+
+  @include media-query(small) {
+    display: block;
+    position: static;
+    margin: 0 $margin-page-mobile-horizontal;
+    padding-bottom: ($margin-body-text + ($margin-body-text / 4));
+    width: $width-page-mobile;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    margin: 0 $margin-page-tablet-horizontal;
+    padding: $padding-div 0 ($margin-body-text + ($margin-body-text / 4)) 0;
+    position: static;
+    width: $width-page-tablet;
+  }
+}
+
+.contact-form .right-column {
+
+  @include media-query(small) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    display: block;
+    left: 0;
+    position: static;
+    width: 100%;
+  }
 }
 
 .input-container {
   display: inline-block;
   margin-top: $margin-body-text + ($margin-body-text / 4);
-  margin-right: $margin-input;
+  margin-right: 4.5%;
   position: relative;
+  width: 30%;
+
+  @include media-query(small) {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  @include media-query(medium) {
+    margin-right: 4.25%;
+    width: 30%;
+  }
 
   & label {
     color: $color-input-label;
@@ -24,6 +93,12 @@ form {
     display: inline-block;
     margin-top: $margin-body-text + ($margin-body-text / 4);
     position: relative;
+    width: 30%;
+
+    @include media-query(small) {
+      margin-right: 0;
+      width: 100%;
+    }
 
     & label {
       color: $color-input-label;
@@ -48,7 +123,7 @@ form {
   }
 }
 
-input {
+.input__contact {
   border: $border-input;
   box-sizing: border-box;
   padding: $padding-input;
@@ -79,7 +154,7 @@ input {
   }
 }
 
-textarea {
+.input__contact--message {
   border: $border-input;
   box-sizing: border-box;
   height: 100%;
@@ -109,4 +184,42 @@ textarea {
     padding: $padding-input-label;
     transform: translateY(-105%);
   }
+}
+
+.contact-form .button-div {
+  // Height is being calculated in script.js
+
+  @include media-query(small) {
+    padding-bottom: $padding-div;
+  }
+
+  @include media-query(medium) {
+    padding-bottom: $padding-div;
+  }
+}
+
+.contact-form .button-container {
+  @include flexbox();
+  height: 100%;
+  width: 100%;
+}
+
+.contact-form .button {
+  padding: 0;
+
+  span {
+    position: absolute;
+    top: 50%;
+    transform: translate(36%, -50%);
+  }
+}
+
+.contact-form button {
+  cursor: pointer;
+  opacity: 0;
+  padding: $padding-button;
+}
+
+.contact-form .frm_error_style {
+  margin-left: 7.5%;
 }
