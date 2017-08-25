@@ -5,13 +5,30 @@
 // HERO
 
 #home-page .hero-section {
-  @include bg-image ($image-folder: "home", $bg-image: "neon-text");
-  // background: $color-hero-background;
   height: 100vh;
+  overflow-y: hidden;
   width: 100%;
 
   @include media-query(small) {
     @include bg-image ($image-folder: "home", $bg-image: "neon-text-mobile");
+  }
+
+  @include media-query(medium) {
+    @include bg-image ($image-folder: "home", $bg-image: "neon-text");
+  }
+}
+
+#home-page .hero-section video {
+  position: relative;
+  top: -37px;
+  width: 100%;
+
+  @include media-query(small) {
+    display: none;
+  }
+
+  @include media-query(medium) {
+    display: none;
   }
 }
 

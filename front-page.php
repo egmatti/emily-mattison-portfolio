@@ -14,6 +14,11 @@ HOME PAGE
 <!-- HERO -->
 
     <section class="hero-section">
+      <video poster="<?php bloginfo('stylesheet_directory'); ?>/images/home/neon-text.png" autoplay>
+        <source src="<?php bloginfo('stylesheet_directory'); ?>/images/home/neon-text.mp4" type="video/mp4"/>
+        <source src="<?php bloginfo('stylesheet_directory'); ?>/images/home/neon-text.webm" type="video/webm"/>
+        <source src="<?php bloginfo('stylesheet_directory'); ?>/images/home/neon-text.ogv" type="video/ogv"/>
+      </video>
     </section>
 
 
