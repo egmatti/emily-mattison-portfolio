@@ -29,8 +29,8 @@ BALLAD PAGE
       <div class="project-overview-section__line--overview"></div>
       <div class="project-overview-section__description-container">
         <div class="project-overview-section__description">
-          <p class="large-body-text center no-headline">I'm a graphic designer and web developer with a passion for helping brands and artists show off the things that make them great. I also enjoy listening to music and playing with my energetic golden retriever.</p>
-          <p class="large-body-text center">What started off as a willingness to help the organizations I was a part of in college create fun posters and brochures has transformed into a life-long love of design and a desire to help others embrace their identities in cool, visually appealing ways.</p>
+          <p class="large-body-text center no-headline">For our final project at The Iron Yard, a fellow UI Design student and I teamed up with a Java student to design and develop ballad, an app that allows songwriters to easily write and save lyrics on their computer or mobile device.</p>
+          <p class="large-body-text center">The prototype that we created offers users rhyme suggestions as they write lyrics and also enables them to save and share their ballads with other users.</p>
           <div class="button-container">
             <a href="http://ballad.herokuapp.com/" target="_blank"><div class="button button-site">
               <span>View Site</span>
@@ -114,7 +114,8 @@ BALLAD PAGE
           <img class="project-float-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/ballad/mobile-mockups/editor-page-mockups.png" alt="ballad Editor page on mobile">
         </div>
         <div class="project-float-section__div--left">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+          <p>In discussing which features to include in the prototype, we decided that we wanted to prioritize the ability to add verse, chorus, and other sections to ballads, select from a list of popular rhyme schemes or create custom ones, and make ballads public or private all from the Editor page.</p>
+          <p>We designed the app so that users would be able to access these features through a slideout menu when writing or editing their ballads on a mobile device.</p>
         </div>
       </section>
 
@@ -131,7 +132,7 @@ BALLAD PAGE
       <div class="project-desktop-mockups-section__border"></div>
       <div class="project-desktop-mockups-section__background--white">
         <div class="project-desktop-mockups-section__description-container">
-          <p class="project-desktop-mockups-section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+          <p class="project-desktop-mockups-section__description">In order to make the app easier to navigate, we decided to keep the design elements consistent across several pages. The My ballads page, Profile page, and Popular page all display the titles and excerpts from individual ballads in either card view or list view, depending on whichever one the user selects. Users can also search for specific ballads from a search bar on each of these pages.</p>
         </div>
         <div class="project-desktop-mockups-section__line"></div>
       </div>
