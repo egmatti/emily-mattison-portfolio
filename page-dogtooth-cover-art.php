@@ -28,8 +28,8 @@ DOGTOOTH COVER ART PAGE
       <div class="project-overview-section__line--overview"></div>
       <div class="project-overview-section__description-container">
         <div class="project-overview-section__description">
-          <p class="large-body-text center no-headline">I'm a graphic designer and web developer with a passion for helping brands and artists show off the things that make them great. I also enjoy listening to music and playing with my energetic golden retriever.</p>
-          <p class="large-body-text center">What started off as a willingness to help the organizations I was a part of in college create fun posters and brochures has transformed into a life-long love of design and a desire to help others embrace their identities in cool, visually appealing ways.</p>
+          <p class="large-body-text center no-headline">While we were both living in Charleston, SC, a friend of mine who is a talented DJ and hip hop producer going by the name of "Dogtooth" asked me to design the artwork for an album that he has been planning on releasing for a while now.</p>
+          <p class="large-body-text center">Inspired by the themes behind the movie <span>Spring Breakers</span> and the glossy music videos of one of his favorite electronic artists, he was hoping I could create a high definition pink ski mask for his cover art.</p>
           <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/dogtooth-cover-art/headphones.png" alt="Headphones"/>
         </div>
       </div>
@@ -85,7 +85,7 @@ DOGTOOTH COVER ART PAGE
         <img class="project-float-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/dogtooth-cover-art/dogtooth-cover-art.png" alt="Dogtooth Cover Art">
       </div>
       <div class="project-float-section__div--right">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+        <p>After finding a freely licensed image of a ski mask online, I created a digital version of the mask using Adobe Illustrator's gradient mesh tool. I then overlaid it with a 16-color illustration of the original image to give the mask added texture. To finish the artwork, I positioned the mask over a background of vectorized concrete and added blurring for the mask's shadows.</p>
       </div>
     </section>
 

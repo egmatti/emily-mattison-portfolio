@@ -43,6 +43,11 @@
   border-color: $color-project-dogtooth-cover-art-primary;
 }
 
+#dogtooth-cover-art-page .project-overview-section__description span {
+  @extend .large-body-text; 
+  font-style: italic;
+}
+
 #dogtooth-cover-art-page .project-overview-section img {
   height: 110px;
   margin-top: $padding-div + 30px;

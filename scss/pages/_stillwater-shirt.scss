@@ -44,6 +44,11 @@
   border-color: $color-project-stillwater-shirt-primary;
 }
 
+#stillwater-shirt-page .project-overview-section__description span {
+  @extend .large-body-text;
+  font-style: italic;
+}
+
 #stillwater-shirt-page .project-overview-section img {
   height: 75px;
   margin-top: $padding-div + 30px;

@@ -28,8 +28,8 @@ TOPTIX PAGE
       <div class="project-overview-section__line--overview"></div>
       <div class="project-overview-section__description-container">
         <div class="project-overview-section__description">
-          <p class="large-body-text center no-headline">I'm a graphic designer and web developer with a passion for helping brands and artists show off the things that make them great. I also enjoy listening to music and playing with my energetic golden retriever.</p>
-          <p class="large-body-text center">What started off as a willingness to help the organizations I was a part of in college create fun posters and brochures has transformed into a life-long love of design and a desire to help others embrace their identities in cool, visually appealing ways.</p>
+          <p class="large-body-text center no-headline">While working as a marketing assistant for TopTix, an international ticketing software provider, I was able to design a variety of advertisements and marketing collateral for both our US and UK offices.</p>
+          <p class="large-body-text center">Because our company’s ticketing platform had previously been marketed and sold as a white label product by another software company, I had the opportunity to assist our marketing director with TopTix's brand development.</p>
           <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/toptix/wristband.png" alt="Compact mirror and lipstick"/>
         </div>
       </div>
@@ -74,7 +74,7 @@ TOPTIX PAGE
         <img class="project-float-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/toptix/advertisements/museum-ad.png" alt="TopTix museum advertisement">
       </div>
       <div class="project-float-section__div--right">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+        <p>As part of a national advertising campaign promoting SRO’s newest membership and fundraising capabilities, I designed this advertisement, which was displayed in an American Alliance of Museums e-newsletter. Once clicked, the ad would take the viewer to a landing page with a video containing more information about membership engagement and our ticketing solution.</p>
       </div>
     </section>
 
@@ -92,7 +92,7 @@ TOPTIX PAGE
         <img class="project-float-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/toptix/advertisements/banner-ads.png" alt="TopTix banner advertisements">
       </div>
       <div class="project-float-section__div--left">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+        <p>I also designed a variety of banner advertisements and email signatures for the same and other campaigns. The ads would link to either additional landing pages or to our company’s YouTube channel, where visitors could watch product demos or recorded client testimonials.</p>
       </div>
     </section>
 
@@ -122,7 +122,7 @@ TOPTIX PAGE
         <img class="project-float-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/toptix/postcards/science-center-postcard.png" alt="TopTix science center postcard">
       </div>
       <div class="project-float-section__div--right">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+        <p>Before appearing at industry conferences, our company would often mail postcards to conference attendees and other association members. I had the chance to design this postcard before my colleagues went to the Association of Science-Technology Centers' conference in 2016.</p>
       </div>
     </section>
 
@@ -140,7 +140,7 @@ TOPTIX PAGE
         <img class="project-float-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/toptix/postcards/museum-postcard.png" alt="TopTix museum postcard">
       </div>
       <div class="project-float-section__div--left">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+        <p>For another museums conference in the UK, I was able to design this postcard, which featured the logos of some of our clients in and around London.</p>
       </div>
     </section>
 
