@@ -28,8 +28,8 @@ BOOKSHELF PAGE
       <div class="project-overview-section__line--overview"></div>
       <div class="project-overview-section__description-container">
         <div class="project-overview-section__description">
-          <p class="large-body-text center no-headline">I'm a graphic designer and web developer with a passion for helping brands and artists show off the things that make them great. I also enjoy listening to music and playing with my energetic golden retriever.</p>
-          <p class="large-body-text center">What started off as a willingness to help the organizations I was a part of in college create fun posters and brochures has transformed into a life-long love of design and a desire to help others embrace their identities in cool, visually appealing ways.</p>
+          <p class="large-body-text center no-headline">For an individual project at The Iron Yard, our instructor asked us to create our own version of the “My Books” page on Goodreads’ website, which at the time, effectively displayed the users’ recently read books, but lacked other qualities that would make them want to return to the page again and again.</p>
+          <p class="large-body-text center">In my redesign, I focused on transforming the site’s tone and intrigue by altering the page’s color palette to be a bit more “cozy” and by reshaping the page’s basic table format into a skeuomorphic bookshelf.</p>
           <div class="button-container">
             <a href="https://egmatti.github.io/goodreadsbookshelf/" target="_blank"><div class="button button-site">
               <span>View Site</span>
@@ -93,7 +93,7 @@ BOOKSHELF PAGE
       <div class="project-desktop-mockups-section__border"></div>
       <div class="project-desktop-mockups-section__background--white">
         <div class="project-desktop-mockups-section__description-container">
-          <p class="project-desktop-mockups-section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+          <p class="project-desktop-mockups-section__description">Inspired by another project I had recently made using Adobe Illustrator’s mesh tool, I decided to replicate the mesh tool’s effects in HTML and CSS using a variety of linear gradients to reflect how the light and shadows would appear on an actual bookshelf. Once a user clicks on a specific book, information about that book appears in a modal over the screen.</p>
         </div>
         <div class="project-desktop-mockups-section__line"></div>
       </div>

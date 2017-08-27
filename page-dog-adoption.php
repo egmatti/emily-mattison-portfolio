@@ -28,8 +28,8 @@ DOG ADOPTION PAGE
       <div class="project-overview-section__line--overview"></div>
       <div class="project-overview-section__description-container">
         <div class="project-overview-section__description">
-          <p class="large-body-text center no-headline">I'm a graphic designer and web developer with a passion for helping brands and artists show off the things that make them great. I also enjoy listening to music and playing with my energetic golden retriever.</p>
-          <p class="large-body-text center">What started off as a willingness to help the organizations I was a part of in college create fun posters and brochures has transformed into a life-long love of design and a desire to help others embrace their identities in cool, visually appealing ways.</p>
+          <p class="large-body-text center no-headline">In order to practice designing and developing websites with a team, two of my fellow UI Design students and I were asked to redesign the website of a local nonprofit of our choosing as part of a group project at The Iron Yard.</p>
+          <p class="large-body-text center"> We decided to create a new website for Saving Grace, an animal shelter in Wake Forest, NC, whose current site appeared a bit too "cutesy" to us. We worked to transform “cutesy” into “fun” by making a new word mark for the organization and by selecting a new brand color palette that was still bright, but that we thought would better emphasize the enjoyable aspects of dog ownership.</p>
           <div class="button-container">
             <a href="http://www.lyndseymitchel.com/sg-redesign/index.html" target="_blank"><div class="button button-site">
               <span>View Site</span>
@@ -78,7 +78,7 @@ DOG ADOPTION PAGE
       <div class="project-desktop-mockups-section__border"></div>
       <div class="project-desktop-mockups-section__background--white">
         <div class="project-desktop-mockups-section__description-container">
-          <p class="project-desktop-mockups-section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+          <p class="project-desktop-mockups-section__description">In designing the wireframes and desktop mockups for the new site, we decided that we wanted to make the site simpler but also more interactive. We added a “Donate" button to the header to make it easier for site visitors to contribute to the organization and used sliders, accordions, and modals in other parts of the site to make viewing the content more streamlined and fun.</p>
         </div>
         <div class="project-desktop-mockups-section__line"></div>
       </div>
