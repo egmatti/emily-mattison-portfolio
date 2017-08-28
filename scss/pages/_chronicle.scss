@@ -44,6 +44,11 @@
   border-color: $color-project-chronicle-primary;
 }
 
+#chronicle-page .project-overview-section__description span {
+  @extend .large-body-text;
+  font-style: italic;
+}
+
 #chronicle-page .project-overview-section img {
   height: 100px;
 }
@@ -79,4 +84,11 @@
     top:  -moz-calc(66vh * (3/4));
     top:    calc(66vh * (3/4));
   }
+}
+
+
+// PROJECT FLOAT SECTION
+
+#chronicle-page .project-float-section span {
+  font-style: italic;
 }

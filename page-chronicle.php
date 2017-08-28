@@ -28,8 +28,8 @@ CHRONICLE PAGE
       <div class="project-overview-section__line--overview"></div>
       <div class="project-overview-section__description-container">
         <div class="project-overview-section__description">
-          <p class="large-body-text center no-headline">I'm a graphic designer and web developer with a passion for helping brands and artists show off the things that make them great. I also enjoy listening to music and playing with my energetic golden retriever.</p>
-          <p class="large-body-text center">What started off as a willingness to help the organizations I was a part of in college create fun posters and brochures has transformed into a life-long love of design and a desire to help others embrace their identities in cool, visually appealing ways.</p>
+          <p class="large-body-text center no-headline">After joining the staff of Clemson University’s student art and literary magazine, the <span>Chronicle</span>, and helping rebrand the publication my sophomore year, I was elected creative director of the magazine my junior year.</p>
+          <p class="large-body-text center">Working with our layout editor and cover artists to guide the overall visual aesthetic of the magazine and its marketing collateral for two semesters was one of the highlights of my college experience.</p>
           <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/chronicle/paint-tube.png" alt="Paint tube"/>
         </div>
       </div>
@@ -78,7 +78,7 @@ CHRONICLE PAGE
         <img class="project-float-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/chronicle/colophon.png" alt="Chronicle Spring 2014 colophon">
       </div>
       <div class="project-float-section__div--right">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+        <p>During my sophomore year, my friend Lauren Hester and I teamed up to create a secondary logo for the <span>Chronicle</span> that would also serve as the magazine’s colophon. Our editor-in-chief had based his editor’s note for the upcoming issue on Walt Whitman’s poem “Pioneers! O Pioneers!” and we thought a pioneer would serve as a good symbol for the magazine’s visual identity as well. After finding a freely licensed photograph of a nineteenth century gold panner online, Lauren painted a six-color depiction of the image, which I then turned into a six-color logo in Adobe Illustrator. We would change the colors of the logo to fit the current issue’s theme in the semesters following.</p>
       </div>
     </section>
 
@@ -96,7 +96,7 @@ CHRONICLE PAGE
         <img class="project-float-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/chronicle/release-party-invitation.png" alt="Chronicle Spring 2014 Release Party invitation">
       </div>
       <div class="project-float-section__div--left">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+        <p>As a way to promote the new issue of the <span>Chronicle</span> each semester, the magazine staff would host a release party featuring student readings and showcases and performances by two local bands. We wanted to encourage the Art and English department faculty members to attend just as much as the students, so I would create invitations for the release party, which the staff would distribute to both departments’ faculty members a few weeks before the event.</p>
       </div>
     </section>
 
@@ -114,7 +114,7 @@ CHRONICLE PAGE
         <img class="project-float-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/chronicle/release-party-handout.png" alt="Chronicle Spring 2014 Release Party handout">
       </div>
       <div class="project-float-section__div--right">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+        <p>In addition to the release party invitations that we sent to faculty members, we would also create flyers for the release party, which our staff would hand out to students in front of the library and other busy locations on campus. I designed this flyer with the help of Chris Phillips, our photographer for the Spring 2014 issue, and Brooke Sidener, our layout editor, who arranged Chris’ photos into a colorful montage for the issue's cover art.</p>
       </div>
     </section>
 
