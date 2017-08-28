@@ -28,8 +28,8 @@ DOGS BOOKLET PAGE
       <div class="project-overview-section__line--overview"></div>
       <div class="project-overview-section__description-container">
         <div class="project-overview-section__description">
-          <p class="large-body-text center no-headline">I'm a graphic designer and web developer with a passion for helping brands and artists show off the things that make them great. I also enjoy listening to music and playing with my energetic golden retriever.</p>
-          <p class="large-body-text center">What started off as a willingness to help the organizations I was a part of in college create fun posters and brochures has transformed into a life-long love of design and a desire to help others embrace their identities in cool, visually appealing ways.</p>
+          <p class="large-body-text center no-headline">To help us gain a better understanding of graphic design terms as well as more experience designing layouts for publications, the professor of one of my Graphic Communications classes at Clemson University asked us to create a booklet summarizing a list of topics in the field.</p>
+          <p class="large-body-text center">We were told that we could pick any sort of theme for the project and, being someone that has always loved dogs, I decided to base my booklet on man’s best friend.</p>
           <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/dogs-booklet/dog-bowl.png" alt="Dog bowl"/>
         </div>
       </div>

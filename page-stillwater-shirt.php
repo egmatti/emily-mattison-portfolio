@@ -70,7 +70,7 @@ STILLWATER SHIRT PAGE
         <img class="project-float-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/stillwater-shirt/pocket-design.png" alt="Stillwater shirt pocket design">
       </div>
       <div class="project-float-section__div--right">
-        <p>To complete the assignment, we were asked to create a one-color front pocket design as well as a two-color back design that utilized at least one screen tint. I decided to modify the name of the tour by replacing one of the letters with a simple, black illustration of an electric guitar.</p>
+        <p>To complete the assignment, we were asked to create a one-color front pocket design as well as a two-color back design that utilized at least one screen tint. For the shirt's pocket design, I decided to modify the name of the tour by replacing one of the letters with a simple, black illustration of an electric guitar.</p>
       </div>
     </section>
 

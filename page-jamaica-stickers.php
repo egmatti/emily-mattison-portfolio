@@ -28,8 +28,8 @@ JAMAICA STICKERS PAGE
       <div class="project-overview-section__line--overview"></div>
       <div class="project-overview-section__description-container">
         <div class="project-overview-section__description">
-          <p class="large-body-text center no-headline">I'm a graphic designer and web developer with a passion for helping brands and artists show off the things that make them great. I also enjoy listening to music and playing with my energetic golden retriever.</p>
-          <p class="large-body-text center">What started off as a willingness to help the organizations I was a part of in college create fun posters and brochures has transformed into a life-long love of design and a desire to help others embrace their identities in cool, visually appealing ways.</p>
+          <p class="large-body-text center no-headline">As one of our projects in my last Graphic Communications class at Clemson University, our professor asked us to create three different sticker designs, which together had to include a trapping of one color to another and a variety of screen tints and overprints.</p>
+          <p class="large-body-text center">With spring break only a few weeks away, I thought it was a perfect opportunity to create a series of watercolor-style designs, all based on the tropical island where I would be spending my vacation.</p>
           <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/jamaica-stickers/pina-colada.png" alt="Pina Colada"/>
         </div>
       </div>

@@ -29,19 +29,19 @@ WORK PAGE
         <h4>Recent</h4>
         <div class="directory-nav-border"></div>
         <div class="directory-nav">
-          <a href="<?php echo get_page_link( get_page_by_title( "Ballad" )->ID ); ?>"><div class="directory-nav__post">
+          <a href="<?php echo get_page_link( get_page_by_title( "ballad App" )->ID ); ?>"><div class="directory-nav__post">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/ballad.png" alt="ballad app">
             <article>
               <h5>ballad App</h5>
             </article>
           </div></a>
-          <a href="<?php echo get_page_link( get_page_by_title( "Dog Adoption" )->ID ); ?>"><div class="directory-nav__post">
+          <a href="<?php echo get_page_link( get_page_by_title( "Dog Adoption Website" )->ID ); ?>"><div class="directory-nav__post">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/dog-adoption.png" alt="Dog adoption website">
             <article>
               <h5>Dog Adoption Website</h5>
             </article>
           </div></a>
-          <a href="<?php echo get_page_link( get_page_by_title( "Bookshelf" )->ID ); ?>"><div class="directory-nav__post">
+          <a href="<?php echo get_page_link( get_page_by_title( "Bookshelf App" )->ID ); ?>"><div class="directory-nav__post">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/bookshelf.png" alt="Bookshelf app">
             <article>
               <h5>Bookshelf App</h5>
@@ -59,7 +59,7 @@ WORK PAGE
               <h5>Dogtooth<br>Cover Art</h5>
             </article>
           </div></a>
-          <a href="<?php echo get_page_link( get_page_by_title( "TopTix" )->ID ); ?>"><div class="directory-nav__post">
+          <a href="<?php echo get_page_link( get_page_by_title( "TopTix Marketing" )->ID ); ?>"><div class="directory-nav__post">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/toptix-proposal.png" alt="TopTix sales proposals">
             <article>
               <h5>TopTix Marketing</h5>
@@ -77,13 +77,13 @@ WORK PAGE
               <h5>Jamaica Stickers</h5>
             </article>
           </div></a>
-          <a href="<?php echo get_page_link( get_page_by_title( "Dogs Booklet" )->ID ); ?>"><div class="directory-nav__post">
+          <a href="<?php echo get_page_link( get_page_by_title( "Dogs! Booklet" )->ID ); ?>"><div class="directory-nav__post">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/dogs-booklet.png" alt="Dogs! booklet">
             <article>
               <h5>Dogs! Booklet</h5>
             </article>
           </div></a>
-          <a href="<?php echo get_page_link( get_page_by_title( "Chronicle" )->ID ); ?>"><div class="directory-nav__post">
+          <a href="<?php echo get_page_link( get_page_by_title( "Chronicle Magazine" )->ID ); ?>"><div class="directory-nav__post">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/chronicle-magazine.png" alt="Chronicle Magazine">
             <article>
               <h5>Chronicle Magazine</h5>
@@ -94,7 +94,7 @@ WORK PAGE
 
       <div class="directory">
         <div class="directory__row--first">
-          <a href="<?php echo get_page_link( get_page_by_title( "Ballad" )->ID ); ?>" class="directory__link--first-row"><figure class="directory__figure--first-row">
+          <a href="<?php echo get_page_link( get_page_by_title( "ballad App" )->ID ); ?>" class="directory__link--first-row"><figure class="directory__figure--first-row">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/ballad.png" alt="ballad app my teammates and I designed and built while at The Iron Yard">
             <figcaption>
               <div>
@@ -105,7 +105,7 @@ WORK PAGE
         </div>
 
         <div class="directory__row--second">
-          <a href="<?php echo get_page_link( get_page_by_title( "Dog Adoption" )->ID ); ?>" class="directory__link--second-row"><figure class="directory__figure--second-row">
+          <a href="<?php echo get_page_link( get_page_by_title( "Dog Adoption Website" )->ID ); ?>" class="directory__link--second-row"><figure class="directory__figure--second-row">
               <div class="directory__image-container">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/dog-adoption.png" alt="Dog adoption website my teammates and I designed while at The Iron Yard">
               </div>
@@ -115,7 +115,7 @@ WORK PAGE
               </div>
             </figcaption>
           </figure></a>
-          <a href="<?php echo get_page_link( get_page_by_title( "Bookshelf" )->ID ); ?>" class="directory__link--second-row"><figure class="directory__figure--second-row">
+          <a href="<?php echo get_page_link( get_page_by_title( "Bookshelf App" )->ID ); ?>" class="directory__link--second-row"><figure class="directory__figure--second-row">
             <div class="directory__image-container">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/bookshelf.png" alt="Bookshelf app I designed while at The Iron Yard">
             </div>
@@ -148,7 +148,7 @@ WORK PAGE
               </div>
             </figcaption>
           </figure></a>
-          <a href="<?php echo get_page_link( get_page_by_title( "TopTix" )->ID ); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
+          <a href="<?php echo get_page_link( get_page_by_title( "TopTix Marketing" )->ID ); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
             <div class="directory__image-container">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/toptix-proposal.png" alt="An example of the proposals I designed for my former company, TopTix">
             </div>
@@ -181,7 +181,7 @@ WORK PAGE
               </div>
             </figcaption>
           </figure></a>
-          <a href="<?php echo get_page_link( get_page_by_title( "Dogs Booklet" )->ID ); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
+          <a href="<?php echo get_page_link( get_page_by_title( "Dogs! Booklet" )->ID ); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
             <div class="directory__image-container">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/dogs-booklet.png" alt="The Dogs! booklet that I designed in my Graphic Communications class">
             </div>
@@ -194,7 +194,7 @@ WORK PAGE
         </div>
 
         <div class="directory__row--other">
-          <a href="<?php echo get_page_link( get_page_by_title( "Chronicle" )->ID ); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
+          <a href="<?php echo get_page_link( get_page_by_title( "Chronicle Magazine" )->ID ); ?>" class="directory__link--other-row"><figure class="directory__figure--other-row">
             <div class="directory__image-container">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/chronicle-magazine.png" alt="Chronicle Magazine Spring 2014 and marketing collateral">
             </div>
