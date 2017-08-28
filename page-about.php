@@ -29,8 +29,8 @@ ABOUT PAGE
       <div class="project-overview-section__description-container">
         <div class="project-overview-section__description">
           <h1 class="center">Hi, I'm Emily!</h1>
-          <p class="large-body-text center">I'm a graphic designer and web developer with a passion for helping brands and artists show off the things that make them great. I also enjoy listening to music and playing with my energetic golden retriever.</p>
-          <p class="large-body-text center">What started off as a willingness to help the organizations I was a part of in college create fun posters and brochures has transformed into a life-long love of design and a desire to help others embrace their identities in cool, visually appealing ways.</p>
+          <p class="large-body-text center">I’m a graphic designer and web developer, but also a music fan, environmental activist, dog owner, and amateur yogi. I’m excited by the possibility of learning and creating new things and I enjoy figuring out what makes a person unique and how to make their talents more easily recognized by other people.</p>
+          <p class="large-body-text center">Thanks for stopping by to get to know a little more about me and please feel free to reach out if you’re interested in working together or just discussing life.</p>
           <img src="<?php bloginfo('stylesheet_directory'); ?>/images/about/notebook.png" alt="Notebook with magnolia flower sketch"/>
         </div>
       </div>
@@ -59,11 +59,10 @@ ABOUT PAGE
     <section class="main-body-section">
       <div class="left-column">
         <div class="main-body-section__description">
-          <p class="no-headline large-body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-          <p class="large-body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-          <p class="large-body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-          <p class="large-body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent.</p>
-          <p class="large-body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+          <p class="no-headline large-body-text">My name is Emily Mattison and I’m a graphic designer and web developer from Spartanburg, SC. I’ve always enjoyed making original things and this early creative spark inspired me to major in English in college so that I could study creative writing. While at school, I got involved with several on-campus organizations that had lots of gifted writers, but not many people who could quickly and easily layout magazines and brochures in a visually appealing way. With a little bit of knowledge of Adobe InDesign, I found myself stepping in to fill those gaps.</p>
+          <p class="large-body-text">In the time since then, I’ve taken a variety of graphic communications, art, and user interface design classes, which have allowed me to expand on those initial design skills with a number of cool results. While taking a graphic design internship in Charleston, SC in the fall after I graduated, I became interested in one day using my abilities to provide marketing and creative direction among emerging musical artists.</p>
+          <p class="large-body-text">Nowadays, I spend my free time looking for opportunities to make album artwork or websites for musicians and going to concerts or conferences to learn more about web development and the music industry. I also try to volunteer with the Sierra Club and often take my dog on long walks around our neighborhood.</p>
+          <p class="large-body-text">If you’re interested in working together or just discussing life, please feel free to reach out. It’s always fun to meet someone new!</p>
         </div>
       </div>
       <div class="right-column button-div">
