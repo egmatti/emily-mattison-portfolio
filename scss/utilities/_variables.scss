@@ -16,6 +16,7 @@ $lighter-gray: lighten($gray, 15%);
 $light-gray: lighten($gray, 30%);
 $royal-blue: #3d01c2;
 
+
 // Project Color Descriptions
 $ballad-blue: #0e5580;
 $ballad-magenta: #ab0061;
@@ -76,7 +77,7 @@ $color-input-label-active: $lighter-sunset-orange;
 $color-input-label-valid: $gray;
 $color-input-label-active-background: linear-gradient(to bottom, $light-gray 50%, $color-body 50%);
 
-$color-link-default: $bright-turquoise;
+$color-link-unvisited: $dark-bright-turquoise;
 $color-link-visited: $royal-blue;
 
 $color-arrows: $black;

@@ -32,6 +32,7 @@
   font-size: $font-size-page-title;
   margin-top: 0;
   padding-top: $padding-page-title;
+  text-align: center;
 
   @include media-query(small) {
     font-size: $font-size-page-title-mobile;

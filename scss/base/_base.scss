@@ -17,6 +17,14 @@ a {
   outline: none;
 }
 
+a:link {
+  color: $color-link-unvisited;
+}
+
+a:visited {
+  color: $color-link-visited;
+}
+
 
 // HEADLINES
 
