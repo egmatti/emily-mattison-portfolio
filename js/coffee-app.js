@@ -79,27 +79,27 @@ jQuery(document).ready(function($) {
 
   // PROJECT DESKTOP MOCKUPS SECTION MARGIN AND LAPTOP POSITIONING
 
-  $(document).ready(function(){
-    var backgroundWhiteHeight = $("#coffee-app-page .project-wireframes-section__background--white").outerHeight();
-    var backgroundGrayHeight = $("#coffee-app-page .project-wireframes-section__background--gray").outerHeight();
-    var wireframesSectionHeight = backgroundWhiteHeight + backgroundGrayHeight;
+  var backgroundWhiteHeight = $("#coffee-app-page .project-wireframes-section__background--white").outerHeight();
+  var backgroundGrayHeight = $("#coffee-app-page .project-wireframes-section__background--gray").outerHeight();
+  var wireframesSectionHeight = backgroundWhiteHeight + backgroundGrayHeight;
 
-    var borderHeight = backgroundWhiteHeight + backgroundGrayHeight - 10;
-    var borderHeightMobile = backgroundWhiteHeight + backgroundGrayHeight + 10;
+  var borderHeight = backgroundWhiteHeight + backgroundGrayHeight - 10;
+  var borderHeightMobile = backgroundWhiteHeight + backgroundGrayHeight + 10;
 
-    if (mediaQuerySmall.matches) {
-      // window width is less than 767px
-      $("#coffee-app-page .project-wireframes-section__border").css({"height": borderHeightMobile});
-    } else if (mediaQueryMedium.matches) {
-      // window width is less than 1025px
-      $("#coffee-app-page .project-wireframes-section__border").css({"height": borderHeight});
-      $("#coffee-app-page .project-wireframes-section").css({"margin-bottom": wireframesSectionHeight});
-    } else {
-      // window width is at least 1025px
-      $("#coffee-app-page .project-wireframes-section__border").css({"height": borderHeight});
-      $("#coffee-app-page .project-wireframes-section").css({"margin-bottom": wireframesSectionHeight});
-    }
-  });
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+    $("#coffee-app-page .project-wireframes-section__border").css({"height": borderHeightMobile});
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+    $("#coffee-app-page .project-wireframes-section__border").css({"height": borderHeight});
+    // $("#coffee-app-page .project-wireframes-section").css({"margin-bottom": wireframesSectionHeight});
+    $("#coffee-app-page .project-wireframes-section").css({"margin-bottom": 1849});
+  } else {
+    // window width is at least 1025px
+    $("#coffee-app-page .project-wireframes-section__border").css({"height": borderHeight});
+    // $("#coffee-app-page .project-wireframes-section").css({"margin-bottom": wireframesSectionHeight});
+    $("#coffee-app-page .project-wireframes-section").css({"margin-bottom": 2350});
+  }
 
 
   // PROJECT DOUBLE SLIDER
