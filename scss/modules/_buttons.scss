@@ -11,7 +11,8 @@
 
   span {
     color: $color-button;
-    font-weight: $font-weight-medium;
+    font-family: $font-stack-medium;
+    // font-weight: $font-weight-medium;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
   }

@@ -16,7 +16,6 @@ $lighter-gray: lighten($gray, 15%);
 $light-gray: lighten($gray, 30%);
 $royal-blue: #3d01c2;
 
-
 // Project Color Descriptions
 $ballad-blue: #0e5580;
 $ballad-magenta: #ab0061;
@@ -48,7 +47,6 @@ $stillwater-shirt-red: #bc5441;
 
 $toptix-blue: #304ca1;
 $toptix-green: #c6dd77;
-
 
 // Color Functions
 $color-body: $white;
@@ -142,7 +140,11 @@ $color-blog-post-title-active: $bright-turquoise;
 // FONTS
 
 // Font Stacks
-$font-stack-primary: "Avenir Next", Helvetica, sans-serif;
+$font-stack-ultra-light: "Avenir Next Ultra Light", Helvetica, sans-serif;
+$font-stack-regular: "Avenir Next Regular", Helvetica, sans-serif;
+$font-stack-medium: "Avenir Next Demi Bold", Helvetica, sans-serif;
+$font-stack-bold: "Avenir Next Bold", Helvetica, sans-serif;
+$font-stack-heavy: "Avenir Next Heavy", Helvetica, sans-serif;
 $font-stack-accent: "Milkshake", "Avenir Next", Helvetica, sans-serif;
 
 // Font Weights
