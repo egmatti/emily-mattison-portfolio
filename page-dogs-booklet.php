@@ -52,7 +52,7 @@ DOGS BOOKLET PAGE
         </div>
       </div>
       <div class="project-main-image-section__image-container">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/toptix-proposal.png" alt=""/>
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/dogs-booklet/booklet.png" alt="Dogs! Booklet"/>
       </div>
     </section>
 

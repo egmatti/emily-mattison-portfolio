@@ -60,7 +60,7 @@ CHRONICLE PAGE
         </div>
       </div>
       <div class="project-main-image-section__image-container">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/toptix-proposal.png" alt=""/>
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/chronicle/magazines.png" alt="Chronicle magazines"/>
       </div>
     </section>
 

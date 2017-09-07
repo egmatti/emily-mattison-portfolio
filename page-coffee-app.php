@@ -52,7 +52,7 @@ COFFEE APP PAGE
         </div>
       </div>
       <div class="project-main-image-section__image-container">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/work/projects/toptix-proposal.png" alt=""/>
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/coffee-app/table.png" alt="Coffee app on mobile surrounded by coffee beans, cinnamon sticks, and tea leaves"/>
       </div>
     </section>
 
@@ -67,11 +67,11 @@ COFFEE APP PAGE
 
     <section class="project-mobile-mockups-section">
       <div class="project-mobile-mockups-section__image-container--left">
-        <img class="project-mobile-mockups-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/coffee-app/mockups/home-screen-mockup.png" alt="">
+        <img class="project-mobile-mockups-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/coffee-app/mockups/home-screen-mockup.png" alt="Coffee app Home screen mockup">
       </div>
 
       <div class="project-mobile-mockups-section__image-container--right">
-        <img class="project-mobile-mockups-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/coffee-app/mockups/voyage-screen-mockup.png" alt="">
+        <img class="project-mobile-mockups-section__image" src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/coffee-app/mockups/voyage-screen-mockup.png" alt="Coffee app Voyage screen mockup">
       </div>
     </section>
 
