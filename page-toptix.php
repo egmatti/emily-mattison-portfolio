@@ -28,7 +28,7 @@ TOPTIX PAGE
       <div class="project-overview-section__line--overview"></div>
       <div class="project-overview-section__description-container">
         <div class="project-overview-section__description">
-          <p class="large-body-text center no-headline">While working as a marketing assistant for TopTix, an international ticketing software provider, I was able to design a variety of advertisements and marketing collateral for both our US and UK offices.</p>
+          <p class="large-body-text center no-headline">While working as a marketing coordinator for TopTix, an international ticketing software provider, I was able to design a variety of advertisements and marketing collateral for both our US and UK offices.</p>
           <p class="large-body-text center">Because our company’s ticketing platform had previously been marketed and sold as a white label product by another software company, I had the opportunity to assist our marketing director with TopTix's brand development.</p>
           <img src="<?php bloginfo('stylesheet_directory'); ?>/images/projects/toptix/wristband.png" alt="Compact mirror and lipstick"/>
         </div>
@@ -43,7 +43,7 @@ TOPTIX PAGE
         <div class="project-main-image-section__description-container">
           <div class="project-main-image-section__description">
             <h5>Role</h5>
-            <p>Marketing Assistant</p>
+            <p>Marketing Coordinator</p>
           </div>
           <div class="project-main-image-section__description">
             <h5>Date</h5>
