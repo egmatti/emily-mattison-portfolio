@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 
   // DIRECTORY NAV HEIGHT AND DIRECTORY ROW POSITIONING
 
-  $(document).ready(function(){
+  $(window).load( function() {
     var firstRowFigureHeight = $("#work-page .directory__figure--first-row").outerHeight();
     var directoryNavContainerHeight = firstRowFigureHeight - 100 - 50;
     var directoryNavHeight = directoryNavContainerHeight - 75;
@@ -29,6 +29,7 @@ jQuery(document).ready(function($) {
       $("#work-page .directory-nav").css({"height": directoryNavHeight, "min-height": 100});
     }
   });
+
 
   // SCROLL REVEAL
 

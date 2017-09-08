@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 
   // DIRECTORY NAV HEIGHT AND DIRECTORY ROW POSITIONING
 
-  $(document).ready(function(){
+  $(window).load( function() {
     var firstRowFigureHeight = $("#the-latest-page .directory__figure--first-row").outerHeight();
     var directoryNavContainerHeight = firstRowFigureHeight - 100 - 50;
     var directoryNavHeight = directoryNavContainerHeight - 75;
