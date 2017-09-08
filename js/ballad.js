@@ -87,47 +87,41 @@ jQuery(document).ready(function($) {
 
   // PROJECT DESKTOP MOCKUPS SECTION MARGIN AND LAPTOP POSITIONING
 
-  var laptopHeight = $("#ballad-page .project-desktop-mockups-section__row--first").height();
-  var laptopPosition = -(laptopHeight / 2);
-  var rowMargin = (laptopHeight / 2);
+  $(window).load( function() {
+    var laptopHeight = $("#ballad-page .project-desktop-mockups-section__row--first").height();
+    var laptopPosition = -(laptopHeight / 2);
+    var rowMargin = (laptopHeight / 2);
 
-  var rowMarginMobile = -(laptopHeight / 2);
+    var rowMarginMobile = -(laptopHeight / 2);
 
-  var backgroundWhiteHeight = $("#ballad-page .project-desktop-mockups-section__background--white").outerHeight();
-  var backgroundGrayHeight = $("#ballad-page .project-desktop-mockups-section__background--gray").outerHeight();
-  var desktopMockupsSectionHeight = backgroundWhiteHeight + backgroundGrayHeight + rowMargin;
+    var backgroundWhiteHeight = $("#ballad-page .project-desktop-mockups-section__background--white").outerHeight();
+    var backgroundGrayHeight = $("#ballad-page .project-desktop-mockups-section__background--gray").outerHeight();
+    var desktopMockupsSectionHeight = backgroundWhiteHeight + backgroundGrayHeight + rowMargin;
 
-  var borderHeight = backgroundWhiteHeight + backgroundGrayHeight;
-  var borderHeightMobile = backgroundWhiteHeight + backgroundGrayHeight - (laptopHeight / 2);
+    var borderHeight = backgroundWhiteHeight + backgroundGrayHeight;
+    var borderHeightMobile = backgroundWhiteHeight + backgroundGrayHeight - (laptopHeight / 2);
 
-  if (mediaQuerySmall.matches) {
-    // window width is less than 767px
-    $("#ballad-page .project-desktop-mockups-section__border").css({"height": borderHeightMobile});
+    if (mediaQuerySmall.matches) {
+      // window width is less than 767px
+      $("#ballad-page .project-desktop-mockups-section__border").css({"height": borderHeightMobile});
 
-    // $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
-    $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": -113});
-    // $("#ballad-page .project-desktop-mockups-section__row--first").css({"margin-bottom": rowMarginMobile});
-    $("#ballad-page .project-desktop-mockups-section__row--first").css({"margin-bottom": -113});
-  } else if (mediaQueryMedium.matches) {
-    // window width is less than 1025px
-    $("#ballad-page .project-desktop-mockups-section__border").css({"height": borderHeight});
-    // $("#ballad-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
-    $("#ballad-page .project-desktop-mockups-section").css({"margin-bottom": 1167.5});
+      $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+      $("#ballad-page .project-desktop-mockups-section__row--first").css({"margin-bottom": rowMarginMobile});
+    } else if (mediaQueryMedium.matches) {
+      // window width is less than 1025px
+      $("#ballad-page .project-desktop-mockups-section__border").css({"height": borderHeight});
+      $("#ballad-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
 
-    // $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
-    $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": -110.5});
-    // $("#ballad-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
-    $("#ballad-page .project-desktop-mockups-section__row--second").css({"margin-top": 110.5});
-  } else {
-    // window width is at least 1025px
-    $("#ballad-page .project-desktop-mockups-section__border").css({"height": borderHeight});
-    // $("#ballad-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
-    $("#ballad-page .project-desktop-mockups-section").css({"margin-bottom": 1689});
+      $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+      $("#ballad-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
+    } else {
+      // window width is at least 1025px
+      $("#ballad-page .project-desktop-mockups-section__border").css({"height": borderHeight});
+      $("#ballad-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
 
-    // $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
-    $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": -207});
-    // $("#ballad-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
-    $("#ballad-page .project-desktop-mockups-section__row--second").css({"margin-top": 207});
-  }
+      $("#ballad-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+      $("#ballad-page .project-desktop-mockups-section__row--second").css({"margin-top": rowMargin});
+    }
+  });
 
 });

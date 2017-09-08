@@ -86,47 +86,41 @@ jQuery(document).ready(function($) {
 
   // PROJECT DESKTOP MOCKUPS SECTION MARGIN AND LAPTOP POSITIONING
 
-  var laptopHeight = $("#bookshelf-page .project-desktop-mockups-section__row--first").height();
-  var laptopPosition = -(laptopHeight / 2);
-  var rowMargin = (laptopHeight / 2);
+  $(window).load( function() {
+    var laptopHeight = $("#bookshelf-page .project-desktop-mockups-section__row--first").height();
+    var laptopPosition = -(laptopHeight / 2);
+    var rowMargin = (laptopHeight / 2);
 
-  var rowMarginMobile = -(laptopHeight / 2);
+    var rowMarginMobile = -(laptopHeight / 2);
 
-  var backgroundWhiteHeight = $("#bookshelf-page .project-desktop-mockups-section__background--white").outerHeight();
-  var backgroundGrayHeight = $("#bookshelf-page .project-desktop-mockups-section__background--gray").outerHeight();
-  var desktopMockupsSectionHeight = backgroundWhiteHeight + backgroundGrayHeight + rowMargin;
+    var backgroundWhiteHeight = $("#bookshelf-page .project-desktop-mockups-section__background--white").outerHeight();
+    var backgroundGrayHeight = $("#bookshelf-page .project-desktop-mockups-section__background--gray").outerHeight();
+    var desktopMockupsSectionHeight = backgroundWhiteHeight + backgroundGrayHeight + rowMargin;
 
-  var borderHeight = backgroundWhiteHeight + backgroundGrayHeight;
-  var borderHeightMobile = backgroundWhiteHeight + backgroundGrayHeight - (laptopHeight / 2);
+    var borderHeight = backgroundWhiteHeight + backgroundGrayHeight;
+    var borderHeightMobile = backgroundWhiteHeight + backgroundGrayHeight - (laptopHeight / 2);
 
-  if (mediaQuerySmall.matches) {
-    // window width is less than 767px
-    $("#bookshelf-page .project-desktop-mockups-section__border").css({"height": borderHeightMobile});
+    if (mediaQuerySmall.matches) {
+      // window width is less than 767px
+      $("#bookshelf-page .project-desktop-mockups-section__border").css({"height": borderHeightMobile});
 
-    // $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
-    $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"top": -113.5});
-    // $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"margin-bottom": rowMarginMobile});
-    $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"margin-bottom": -113.5});
-  } else if (mediaQueryMedium.matches) {
-    // window width is less than 1025px
-    $("#bookshelf-page .project-desktop-mockups-section__border").css({"height": borderHeight});
-    // $("#bookshelf-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
-    $("#bookshelf-page .project-desktop-mockups-section").css({"margin-bottom": 993.5});
+      $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+      $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"margin-bottom": rowMarginMobile});
+    } else if (mediaQueryMedium.matches) {
+      // window width is less than 1025px
+      $("#bookshelf-page .project-desktop-mockups-section__border").css({"height": borderHeight});
+      $("#bookshelf-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
 
-    // $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
-    $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"top": -110.5});
-    // $("#bookshelf-page .project-desktop-mockups-section__row--last").css({"margin-top": rowMargin});
-    $("#bookshelf-page .project-desktop-mockups-section__row--last").css({"margin-top": 110.5});
-  } else {
-    // window width is at least 1025px
-    $("#bookshelf-page .project-desktop-mockups-section__border").css({"height": borderHeight});
-    // $("#bookshelf-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
-    $("#bookshelf-page .project-desktop-mockups-section").css({"margin-bottom": 1429.5});
+      $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+      $("#bookshelf-page .project-desktop-mockups-section__row--last").css({"margin-top": rowMargin});
+    } else {
+      // window width is at least 1025px
+      $("#bookshelf-page .project-desktop-mockups-section__border").css({"height": borderHeight});
+      $("#bookshelf-page .project-desktop-mockups-section").css({"margin-bottom": desktopMockupsSectionHeight});
 
-    // $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
-    $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"top": -207.5});
-    // $("#bookshelf-page .project-desktop-mockups-section__row--last").css({"margin-top": rowMargin});
-    $("#bookshelf-page .project-desktop-mockups-section__row--last").css({"margin-top": 207.5});
-  }
+      $("#bookshelf-page .project-desktop-mockups-section__row--first").css({"top": laptopPosition});
+      $("#bookshelf-page .project-desktop-mockups-section__row--last").css({"margin-top": rowMargin});
+    }
+  });
 
 });
