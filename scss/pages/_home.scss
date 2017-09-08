@@ -36,6 +36,7 @@
 // ABOUT SECTION
 
 #home-page .about-section {
+  @include flexbox();
   height: -webkit-calc(100vh - 80px);
   height:   -moz-calc(100vh - 80px);
   height:     calc(100vh - 80px);
@@ -301,6 +302,7 @@
 // INSTAGRAM SECTION
 
 #home-page .instagram-section {
+  @include flexbox();
   clear: both;
   height: -webkit-calc(100vh - 80px);
   height:   -moz-calc(100vh - 80px);
@@ -314,6 +316,10 @@
   @include media-query(medium) {
     height: auto;
   }
+}
+
+#home-page .instagram-container {
+  width: 100%;
 }
 
 #home-page .instagram-slider-for--desktop {

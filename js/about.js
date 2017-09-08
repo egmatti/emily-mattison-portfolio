@@ -74,4 +74,20 @@ jQuery(document).ready(function($) {
     }
   });
 
+
+  // MAIN BODY SECTION BUTTON DIV HEIGHT
+
+  var mainBodySectionHeight = $("#about-page .main-body-section").height();
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+
+  } else {
+    // window width is at least 1025px
+    $("#about-page .main-body-section .button-div").css({"height": mainBodySectionHeight});
+  }
+
 });

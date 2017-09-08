@@ -120,90 +120,92 @@ HOME PAGE
 <!-- INSTAGRAM SECTION -->
 
     <section class="instagram-section">
+      <div class="instagram-container">
 
-      <div class=instagram-div>
-        <div class="instagram-slider-for--desktop">
+        <div class=instagram-div>
+          <div class="instagram-slider-for--desktop">
 
-          <?php
+            <?php
 
-            $args = array(
-              'post_type' => 'instagram_post',
-              'posts_per_page' => '12'
-            );
+              $args = array(
+                'post_type' => 'instagram_post',
+                'posts_per_page' => '12'
+              );
 
-            $instagram_desktop_query = new WP_Query($args);
+              $instagram_desktop_query = new WP_Query($args);
 
-          ?>
+            ?>
 
-          <?php if ( $instagram_desktop_query->have_posts() ) : while ( $instagram_desktop_query->have_posts() ) : $instagram_desktop_query->the_post(); ?>
+            <?php if ( $instagram_desktop_query->have_posts() ) : while ( $instagram_desktop_query->have_posts() ) : $instagram_desktop_query->the_post(); ?>
 
-            <div class="instagram-slider-for__post">
-              <?php the_content(); ?><img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/></a>
-            </div>
+              <div class="instagram-slider-for__post">
+                <?php the_content(); ?><img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/></a>
+              </div>
 
-          <?php endwhile; endif; wp_reset_postdata(); ?>
+            <?php endwhile; endif; wp_reset_postdata(); ?>
 
+          </div>
+
+          <div class="instagram-slider-for--tablet">
+
+            <?php
+
+              $args = array(
+                'post_type' => 'instagram_post',
+                'posts_per_page' => '12'
+              );
+
+              $instagram_tablet_query = new WP_Query($args);
+
+            ?>
+
+            <?php if ( $instagram_tablet_query->have_posts() ) : while ( $instagram_tablet_query->have_posts() ) : $instagram_tablet_query->the_post(); ?>
+
+              <div class="instagram-slider-for__post">
+                <?php the_content(); ?><img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/></a>
+              </div>
+
+            <?php endwhile; endif; wp_reset_postdata(); ?>
+
+          </div>
+
+          <div class="instagram-slider-for--mobile">
+
+            <?php
+
+              $args = array(
+                'post_type' => 'instagram_post',
+                'posts_per_page' => '12'
+              );
+
+              $instagram_mobile_query = new WP_Query($args);
+
+            ?>
+
+            <?php if ( $instagram_mobile_query->have_posts() ) : while ( $instagram_mobile_query->have_posts() ) : $instagram_mobile_query->the_post(); ?>
+
+              <div class="instagram-slider-for__post">
+                <?php the_content(); ?><img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/></a>
+              </div>
+
+            <?php endwhile; endif; wp_reset_postdata(); ?>
+
+          </div>
         </div>
 
-        <div class="instagram-slider-for--tablet">
-
-          <?php
-
-            $args = array(
-              'post_type' => 'instagram_post',
-              'posts_per_page' => '12'
-            );
-
-            $instagram_tablet_query = new WP_Query($args);
-
-          ?>
-
-          <?php if ( $instagram_tablet_query->have_posts() ) : while ( $instagram_tablet_query->have_posts() ) : $instagram_tablet_query->the_post(); ?>
-
-            <div class="instagram-slider-for__post">
-              <?php the_content(); ?><img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/></a>
-            </div>
-
-          <?php endwhile; endif; wp_reset_postdata(); ?>
-
+        <div class="button-container">
+          <a href="https://www.instagram.com/emilymattisondesign/" target="_blank"><div class="button button-instagram">
+            <span>Follow @emilymattisondesign on Instagram</span>
+          </div></a>
         </div>
 
-        <div class="instagram-slider-for--mobile">
-
-          <?php
-
-            $args = array(
-              'post_type' => 'instagram_post',
-              'posts_per_page' => '12'
-            );
-
-            $instagram_mobile_query = new WP_Query($args);
-
-          ?>
-
-          <?php if ( $instagram_mobile_query->have_posts() ) : while ( $instagram_mobile_query->have_posts() ) : $instagram_mobile_query->the_post(); ?>
-
-            <div class="instagram-slider-for__post">
-              <?php the_content(); ?><img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"/></a>
-            </div>
-
-          <?php endwhile; endif; wp_reset_postdata(); ?>
-
+        <div class="button-container--mobile">
+          <div class="button button-instagram">
+            <span>Follow on Instagram</span>
+          </div>
         </div>
+
       </div>
-
-      <div class="button-container">
-        <a href="https://www.instagram.com/emilymattisondesign/" target="_blank"><div class="button button-instagram">
-          <span>Follow @emilymattisondesign on Instagram</span>
-        </div></a>
-      </div>
-
-      <div class="button-container--mobile">
-        <div class="button button-instagram">
-          <span>Follow on Instagram</span>
-        </div>
-      </div>
-
     </section>
 
 

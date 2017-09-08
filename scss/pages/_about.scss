@@ -130,27 +130,24 @@
 }
 
 #about-page .main-body-section .button-div {
-  height: 100%;
+  // Height is being calculated in about.js
 }
 
 #about-page .main-body-section .button-container {
   @include flexbox();
   height: 100%;
-  margin: -75px 0;
   padding-bottom: 75px;
   width: 100%;
 
   @include media-query(small) {
     height: auto;
     padding: $padding-div 0 0 0;
-    margin: 0;
     width: 100%;
   }
 
   @include media-query(medium) {
     height: auto;
     padding: $padding-div 0 0 0;
-    margin: 0;
     width: 100%;
   }
 }
