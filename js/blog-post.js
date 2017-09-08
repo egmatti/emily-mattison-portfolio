@@ -50,4 +50,21 @@ jQuery(document).ready(function($) {
   // Do this on load just in case the user starts half way down the page
   checkY();
 
+
+  // BLOG POST CONTAINER WIDTH
+
+  var contentSectionWidth = $("#blog-post-page .content-section").width();
+  var blogPostContainerWidth = contentSectionWidth - 325 - 125 - 100;
+
+  if (mediaQuerySmall.matches) {
+    // window width is less than 767px
+
+  } else if (mediaQueryMedium.matches) {
+    // window width is less than 1025px
+
+  } else {
+    // window width is at least 767px
+    $("#blog-post-page .blog-post-container").css({"width": blogPostContainerWidth});
+  }
+
 });

@@ -144,7 +144,6 @@
   margin-bottom: $margin-section-vertical;
   margin-top: -25px;
   position: relative;
-  width: 600px;
 
   @include media-query(small) {
     float: none;
