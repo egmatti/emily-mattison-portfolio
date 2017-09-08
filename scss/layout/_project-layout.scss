@@ -43,13 +43,13 @@
 
 .project-layout-section__cover {
   background: $color-body;
-  position: absolute;
   width: 100%;
   z-index: 10;
 
   @include m(top) {
     @extend .project-layout-section__cover;
     height: 53px;
+    position: absolute;
     top: 0;
 
     @include media-query(small) {
@@ -59,11 +59,17 @@
 
   @include m(bottom) {
     @extend .project-layout-section__cover;
-    height: 90px;
-    bottom: 0;
+    height: 88px;
+    position: relative;
+    top: 568px;
 
     @include media-query(small) {
       height: 62px;
+      top: 80%;
+    }
+
+    @include media-query(medium) {
+      top: 425px;
     }
   }
 }
